@@ -46,6 +46,7 @@ Tips:
 - for writing, see file.write() and file.close()
 - Use the function str.split() and float() to obtain the data as separate 
   numerical values (instead of strings).
+- [Official Solution](exercises/exercise00.py)
 
 
 
@@ -55,7 +56,6 @@ Do the same as you did in *Part 1* of Exercise 0 but using the numpy module.
 Work with the data in the form of numpy.arrays
 
 Tips:
------
 
 - you can save typing by doing: "import numpy as np" (you could even do 
   "from numpy import *" but it is not recommended because it would pollute
@@ -64,7 +64,7 @@ Tips:
 - You will find the following functions and methods very useful: numpy.max(), 
   numpy.arange() numpy.zeros() and numpy.array.flatten()
 - Remember that arithmetical operations on numpy arrays are element-wise!
-
+- [Official Solution](exercises/exercise01.py)
 
 
 Exercise 2 (plotting matlab-style).
@@ -75,44 +75,43 @@ Once you got it, change the Y axis to log scale.
 Add titles for the axes in the plot
 
 Tips:
------
 
 - See http://matplotlib.sourceforge.net/users/pyplot_tutorial.html
 - For semilog plots you can use matplotlib.pyplot.semilogy()
-
+- [Official Solution](exercises/exercise02.py)
 
 
 Exercise 3 (scipy for matrix operations)
 ========================================
 
-1.-In ipython, explore the documentation of scipy: scipy?
+1. In ipython, explore the documentation of scipy: scipy?
 
-2.-create the following 3x3 square matrix:
+2. create the following 3x3 square matrix:
 
-    M = S.array([[1,2,0],
-                [0,2,0],
-                [0,0,3]])
+        M = S.array([[1,2,0],
+                    [0,2,0],
+                    [0,0,3]])
 
-3.-Find the sum of all the columns and of all the rows.
+3. Find the sum of all the columns and of all the rows.
 
-4.-Find the transpose of M. Compare the first column of M with the first row of
+4. Find the transpose of M. Compare the first column of M with the first row of
 its transpose (check if they are the same with the "==" operator). 
 Make an "if" block that prints "Maths work" if the comparison is true.
 
-5.-create a copy of M called M2. Change the element in the first row and
+5. create a copy of M called M2. Change the element in the first row and
 second column (which is a 2) by its square root. Make sure that M did not 
 change. Then get the elements of the diagonal of M2
 
-6.-invert M and then check that M multiplied by its inverse gives an Identity 
+6. invert M and then check that M multiplied by its inverse gives an Identity 
 matrix (note: round off to 3 decimal points)
 
-7.-Find the eigenvectors and eigenvalues of M. Then check that, for a given 
+7. Find the eigenvectors and eigenvalues of M. Then check that, for a given 
 eigenvalue (w) and its associated eigenvector (v), the following 
 is true: M v = w v
 
  
 Tips:
------
+
 
 - Important: for this exercise, it is more convenient to use the methods of
   the arrays. i,e, it is better to use M.transpose() than scipy.transpose(M).
@@ -125,6 +124,7 @@ Tips:
 - See scipy.linalg for inversion and eigenvectors
 
 - To round-off any scipy data type, you can use the .round() method
+- [Official Solution](exercises/exercise03.py)
 
 
 
@@ -132,26 +132,21 @@ Tips:
 Exercise 4 (scipy for matrix operations)
 ========================================
 
-1.-Generate 3 vectors (1D arrays) called datax, data0 and datay  of 100 
+1. Generate 3 vectors (1D arrays) called datax, data0 and datay  of 100 
    elements each containing:
+   * `datax` <-- numbers from -5 to +5 in 0.1 increments
+   * `datay0` <-- 3x^2 + 5x - 10
+   * `datay = datay0 + random_noise` where `random_noise` is randomly 
+   distributed gaussian values with standard deviation=10
 
-    datax = numbers from -5 to +5 in 0.1 increments
-
-    datay0 = 3x^2+5x-10
-
-    datay = datay0 + random_noise  
-
-    (where random_noise is randomly distributed gaussian values with standard 
-    deviation=10)
-
-2.-Plot datay0 and datay as a function of datax. Plot datay0 as a blue line 
+2. Plot datay0 and datay as a function of datax. Plot datay0 as a blue line 
    and datay as red dots .
 
-3.-smooth datay with a median filter (you may use a kernel size of, e.g. 
+3. smooth datay with a median filter (you may use a kernel size of, e.g. 
    7 points).  Plot the filtered data (with dashed lines) superimposed to datay 
    and datay0.
 
-4.-make a polynomial fit of datay to the function f(x)=a*x**2+b*x+c . 
+4. make a polynomial fit of datay to the function f(x)=a*x**2+b*x+c . 
    Obtain the values of a, b and c from the fit and print them. Then use them 
    to plot the fitted curve (in green) superimposed to datay0 and datay.
 
@@ -173,6 +168,7 @@ Tips:
   - http://glowingpython.blogspot.com.es/2011/07/polynomial-curve-fitting.html
 
   - http://matplotlib.sourceforge.net/users/pyplot_tutorial.html
+- [Official Solution](exercises/exercise04.py) 
 
  
 
@@ -184,7 +180,6 @@ Find value of x that satisfies the following (transcendental) equation:
 x = sin(x)
 
 Tips:
------
 
 - Solving the equation A(x)=B(x) is just finding the roots of the function 
   f(x)=A(x)-B(x)
@@ -198,3 +193,4 @@ Tips:
 
 - If the newton method does not converge, try playing with the tolerance and/or 
   the maximum number of iterations
+- [Official Solution](exercises/exercise05.py)
