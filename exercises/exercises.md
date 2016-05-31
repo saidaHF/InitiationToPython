@@ -10,7 +10,7 @@ with a 3-line header and the data packed in 8 columns.
 The header contains the information needed to reconstruct the time scale 
 (in ps):
 
-time = ChannelNumber * GAIN + OFFSET
+`time = ChannelNumber * GAIN + OFFSET`
 
 Part 1:
 -------
@@ -89,11 +89,9 @@ Exercise 3 (scipy for matrix operations)
 
 2.-create the following 3x3 square matrix:
 
-    ```
     M = S.array([[1,2,0],
                 [0,2,0],
                 [0,0,3]])
-    ```
 
 3.-Find the sum of all the columns and of all the rows.
 
@@ -131,17 +129,17 @@ Tips:
 
 
 
-Exercise 4 ()
-=====================
+Exercise 4 (scipy for matrix operations)
+========================================
 
 1.-Generate 3 vectors (1D arrays) called datax, data0 and datay  of 100 
    elements each containing:
 
-    datax= numbers from -5 to +5 in 0.1 increments
+    datax = numbers from -5 to +5 in 0.1 increments
 
-    datay0= 3x^2+5x-10
+    datay0 = 3x^2+5x-10
 
-    datay=datay0+ random_noise  
+    datay = datay0 + random_noise  
 
     (where random_noise is randomly distributed gaussian values with standard 
     deviation=10)
@@ -179,8 +177,8 @@ Tips:
  
 
  
-Exercise 5 (numpy IO)
-=====================
+Exercise 5 (scipy for data reduction)
+=====================================
  
 Find value of x that satisfies the following (transcendental) equation:
 x = sin(x)
