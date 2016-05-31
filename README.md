@@ -35,8 +35,9 @@ After each session, some exercises will be proposed, and the solutions from
 each attendee will be personally reviewed by me. On the next session(s) we will 
 comment the different approaches and common problems.
 
-Each attendee should [fork](https://gitcomputing.cells.es/cpascual/pythoncourse-intro/fork) this repo (use the "fork" button) and upload his/her
-own solution to the "solutions" directory. I will add personalized comments 
-there.
+Each attendee should **fork** this repo (use the "Fork repository" button from 
+[the project home page](https://gitcomputing.cells.es/cpascual/pythoncourse-intro) 
+and upload his/her own solution to the "solutions" directory. 
+I will add personalized comments there.
 
 (Note, all this can be done using the web interface)
