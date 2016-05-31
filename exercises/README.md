@@ -18,7 +18,7 @@ Warm-up exercises
 
 Simple exercises to get used to python basics.
 
-- From http://introtopython.org/var_string_num.html:
+- From http://introtopython.org/var_string_num.html :
   - hello world
   - one variable, two messages
   - first name cases
