@@ -86,7 +86,7 @@ Tips:
 - for writing, see file.write() and file.close()
 - Use the function str.split() and float() to obtain the data as separate 
   numerical values (instead of strings).
-- [Official Solution](exercises/exercise00.py)
+- [Official Solution](exercises/cheat/exercise00.py)
 
 
 
@@ -105,7 +105,7 @@ Tips:
 - You will find the following functions and methods very useful: numpy.max(), 
   numpy.arange() numpy.zeros() and numpy.array.flatten()
 - Remember that arithmetical operations on numpy arrays are element-wise!
-- [Official Solution](exercises/exercise01.py)
+- [Official Solution](exercises/cheat/exercise01.py)
 
 
 Exercise 2 (plotting matlab-style).
@@ -119,7 +119,7 @@ Tips:
 
 - See http://matplotlib.sourceforge.net/users/pyplot_tutorial.html
 - For semilog plots you can use matplotlib.pyplot.semilogy()
-- [Official Solution](exercises/exercise02.py)
+- [Official Solution](exercises/cheat/exercise02.py)
 
 
 Exercise 3 (scipy for matrix operations)
@@ -165,7 +165,7 @@ Tips:
 - See scipy.linalg for inversion and eigenvectors
 
 - To round-off any scipy data type, you can use the .round() method
-- [Official Solution](exercises/exercise03.py)
+- [Official Solution](exercises/cheat/exercise03.py)
 
 
 
@@ -209,7 +209,7 @@ Tips:
   - http://glowingpython.blogspot.com.es/2011/07/polynomial-curve-fitting.html
 
   - http://matplotlib.sourceforge.net/users/pyplot_tutorial.html
-- [Official Solution](exercises/exercise04.py) 
+- [Official Solution](exercises/cheat/exercise04.py) 
 
  
 
@@ -234,4 +234,4 @@ Tips:
 
 - If the newton method does not converge, try playing with the tolerance and/or 
   the maximum number of iterations
-- [Official Solution](exercises/exercise05.py)
+- [Official Solution](exercises/cheat/exercise05.py)

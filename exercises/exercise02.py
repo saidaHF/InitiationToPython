@@ -11,7 +11,7 @@ Tips:
 
 - See http://matplotlib.sourceforge.net/users/pyplot_tutorial.html
 - For semilog plots you can use matplotlib.pyplot.semilogy()
-- [Official Solution](exercises/exercise02.py)
+- [Official Solution](exercises/cheat/exercise02.py)
 """
 
 # Write your solution here

@@ -43,7 +43,7 @@ Tips:
 - for writing, see file.write() and file.close()
 - Use the function str.split() and float() to obtain the data as separate 
   numerical values (instead of strings).
-- [Official Solution](exercises/exercise00.py)
+- [Official Solution](exercises/cheat/exercise00.py)
 
 """
 

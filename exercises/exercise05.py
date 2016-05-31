@@ -20,7 +20,7 @@ Tips:
 
 - If the newton method does not converge, try playing with the tolerance and/or 
   the maximum number of iterations
-- [Official Solution](exercises/exercise05.py)
+- [Official Solution](exercises/cheat/exercise05.py)
 """
 
 # Write your solution here

@@ -39,7 +39,7 @@ Tips:
   - http://glowingpython.blogspot.com.es/2011/07/polynomial-curve-fitting.html
 
   - http://matplotlib.sourceforge.net/users/pyplot_tutorial.html
-- [Official Solution](exercises/exercise04.py) 
+- [Official Solution](exercises/cheat/exercise04.py) 
 """
 
 # Write your solution here

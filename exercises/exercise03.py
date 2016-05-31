@@ -43,7 +43,7 @@ Tips:
 - See scipy.linalg for inversion and eigenvectors
 
 - To round-off any scipy data type, you can use the .round() method
-- [Official Solution](exercises/exercise03.py)
+- [Official Solution](exercises/cheat/exercise03.py)
 
 """
 

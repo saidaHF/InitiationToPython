@@ -15,7 +15,7 @@ Tips:
 - You will find the following functions and methods very useful: numpy.max(), 
   numpy.arange() numpy.zeros() and numpy.array.flatten()
 - Remember that arithmetical operations on numpy arrays are element-wise!
-- [Official Solution](exercises/exercise01.py)
+- [Official Solution](exercises/cheat/exercise01.py)
 """
 
 # Write your solution here
