@@ -1,9 +1,8 @@
 Exercise 0 (format conversor).
 ==============================
 
-Download the file [sp8c.dat](exercises/sp8c.dat) and save it in your working directory:
-
-http://www.cells.es/Intranet/Divisions/Computing/Controls/howto/scipy/sp8c.dat
+Download the file [sp8c.dat](exercises/sp8c.dat) and save it in your working 
+directory:
 
 It is a positron-decay spectrum (counts as a function of time) saved in ASCII 
 with a 3-line header and the data packed in 8 columns.
@@ -29,7 +28,7 @@ in 2 columns where:
 Part 2:
 -------
 
-Modify the program you did in Part 1but assuming that you need to read the 
+Modify the program you did in Part 1 but assuming that you need to read the 
 header. Particularly, not only the GAIN and OFFSET items may have different 
 values, but also the order of the items in the header can vary and there could
 be more items in the header (it won't always be 3 lines). The marker for 
