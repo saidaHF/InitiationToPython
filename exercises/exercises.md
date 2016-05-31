@@ -1,5 +1,50 @@
+Python Introduction exercises 
+=============================
+
+Some exercises for a course on basic uses of python in science. They Cover: 
+
+- File I/O 
+- algebra operations
+- plotting
+- fitting
+- numerical solution of equations
+- random number generation
+
+They use numpy, scipy and matplotlib
+
+
+Warm-up exercises
+-----------------
+
+Simple exercises to get used to python basics.
+
+- From http://introtopython.org/var_string_num.html:
+  - hello world
+  - one variable, two messages
+  - first name cases
+  - full name
+  - arithmetic
+  
+- From http://introtopython.org/lists_tuples.html :
+  - first list
+  - working list
+  - starting from empty
+  - ordered numbers (ignore the requirement of using for loops)
+  - alphabet slices
+  - first twenty
+  
+- And *also* the following exercise on dictionaries:
+  Create the following dictionary to be used as a phonebook:
+  
+        phonebook = { "John" : 7566,  "Jack" : 7264,  "Jill" : 2781}
+
+  Add "Jake" to the phonebook with the phone number 938273443,  and remove Jill
+  from the phonebook. Then print the phonebook in alphabetical order
+
+
+
 Exercise 0 (format conversor).
-==============================
+------------------------------
 
 Download the file [sp8c.dat](exercises/sp8c.dat) and save it in your working 
 directory:
@@ -12,23 +57,18 @@ The header contains the information needed to reconstruct the time scale
 
 `time = ChannelNumber * GAIN + OFFSET`
 
-Part 1:
--------
+The exercise is done in two parts:
 
-Assume that you know beforehand that the header has 3 lines and that the 
+1. Assume that you know beforehand that the header has 3 lines and that the 
 gain is 50.0 and the offset is 1000 ((i.e., you can skip reading the header).
 Write a python script that writes converted data to a file called "sp2c.dat"
 in 2 columns where:
+  - There is no header
+  - column 1 is the time
+  - column 2 is the number of counts normalised by the maximum value of counts
 
-- There is no header
-- column 1 is the time
-- column 2 is the number of counts normalised by the maximum value of counts
 
-
-Part 2:
--------
-
-Modify the program you did in Part 1 but assuming that you need to read the 
+2. Modify the program you did in part 1 but assuming that you need to read the 
 header. Particularly, not only the GAIN and OFFSET items may have different 
 values, but also the order of the items in the header can vary and there could
 be more items in the header (it won't always be 3 lines). The marker for 
@@ -51,7 +91,8 @@ Tips:
 
 
 Exercise 1 (numpy IO)
-=====================
+----------------------
+
 Do the same as you did in *Part 1* of Exercise 0 but using the numpy module.
 Work with the data in the form of numpy.arrays
 
@@ -68,7 +109,7 @@ Tips:
 
 
 Exercise 2 (plotting matlab-style).
-===================================
+-----------------------------------
 
 Do a script that reads the "sp2c.dat" and plots counts VS time.
 Once you got it, change the Y axis to log scale.
@@ -82,7 +123,7 @@ Tips:
 
 
 Exercise 3 (scipy for matrix operations)
-========================================
+----------------------------------------
 
 1. In ipython, explore the documentation of scipy: scipy?
 
@@ -130,7 +171,7 @@ Tips:
 
 
 Exercise 4 (scipy for matrix operations)
-========================================
+----------------------------------------
 
 1. Generate 3 vectors (1D arrays) called datax, data0 and datay  of 100 
    elements each containing:
@@ -174,7 +215,7 @@ Tips:
 
  
 Exercise 5 (scipy for data reduction)
-=====================================
+--------------------------------------
  
 Find value of x that satisfies the following (transcendental) equation:
 x = sin(x)
