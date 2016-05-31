@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-
-
-#Solutions to scipy course
-#By carlos.pascual@cells.es
 
 """
 Exercise 1 (numpy IO)
@@ -23,30 +18,4 @@ Tips:
 - [Official Solution](exercises/exercise01.py)
 """
 
-import numpy
-inputfilename='sp8c.dat'
-outputfilename='sp2c.dat'
-
-
-# I am assuming I know the values of the header. See exercise 00 Part 2
-# for a implementation where the header is read.
-hdr_lines =  3
-gain = 50.
-offset = 1000.
-
-#read the data (I skip the 3 first rows -the header-)
-data = numpy.loadtxt(inputfilename, skiprows=hdr_lines)
-
-# make a vector out of the Nx8 matrix read by loadtxt()
-data = data.flatten()  
-
-# create an empty Nx2 matrix (to store the 2 columns)
-output = numpy.zeros((data.size, 2))  
-
-# and fill it...
-output[:,0] = numpy.arange(data.size) * gain + offset  # time
-output[:,1] = data / data.max()  # normalised data
-
-# write to output file
-numpy.savetxt(outputfilename, output)
-
+# Write your solution here
