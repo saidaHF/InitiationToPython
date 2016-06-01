@@ -6,10 +6,10 @@ course at ALBA:
 
 In particular, you may be interested in:
 
-- Slides for the course (they are just and index of topics that will be 
+- [Slides](pythonIntro-slides.odp) for the course (they are just and index of topics that will be 
   explained in practice.
 
-- Proposed [exercises] and my solutions to them
+- Proposed [exercises](exercises) and my [solutions](exercises/cheat) to them
 
 
 Pre-course checklist
@@ -22,11 +22,11 @@ Pre-course checklist
   [PythonXY](http://python-xy.github.io). Try at least to launch spyder once. 
   If you need assistance, please contact Systems.
 
-- read this intro: http://docs.python.org/2/tutorial/introduction.html
+- Familiarize yourself with the most basic concepts of python:
 
-- follow this tutorial: http://introtopython.org/var_string_num.html
+  - Read [this intro](http://docs.python.org/2/tutorial/introduction.html)
 
-- and the first part (till the first block of exercises) of:
-  http://introtopython.org/lists_tuples.html
+  - Follow [this tutorial](http://introtopython.org/var_string_num.html)
 
-
+  - And also follow the first part (till the first block of exercises) of
+    [this other tutorial](http://introtopython.org/lists_tuples.html)
