@@ -1,11 +1,16 @@
 Python Introduction exercises 
 =============================
 
-After each session, some exercises will be proposed, and the solutions from 
-each attendee will be personally reviewed by me. On the next session(s) we will 
-comment the different approaches and common problems.
+At the end of each session, some exercises from this page will be proposed, 
+which you should try to solve during that day. I will review your solution and 
+make comments (see the procedure below).
 
-The procedure for getting your exercises reviewed, is:
+On the following session, we will all discuss the different approaches and 
+common problems/solutions.
+
+
+Procedure for submitting your exercises:
+----------------------------------------
 
 1. Go to the [exercises page](http://git.cells.es/cpascual/pythoncourse-intro/exercises) 
    and download the file corresponding to the exercise that you want to solve
