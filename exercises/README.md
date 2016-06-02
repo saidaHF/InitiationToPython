@@ -7,41 +7,27 @@ comment the different approaches and common problems.
 
 The procedure for getting your exercises reviewed, is:
 
-1. **Fork** the python course repository (use the "Fork repository" button from 
-   [the project home page](https://git.cells.es/cpascual/pythoncourse-intro).
-    This will create your personal "copy" of this project in:
-    `https://git.cells.es/YOUR_USER_NAME/pythoncourse-intro`
+1. Go to the [exercises page](http://git.cells.es/cpascual/pythoncourse-intro/exercises) 
+   and download the file corresponding to the exercise that you want to solve
+   
+2. Open the downloaded file (e.g., whith spyder) and solve the exercise, testing
+   in your PC
 
-2. **Download** your forked repo: 
-   - You can use the "Download zip" button from: 
-    `https://git.cells.es/YOUR_USER_NAME/pythoncourse-intro`
-   - Alternatively, advanced users may **clone** it using git:
+3. When finished, go back to the [exercises page](http://git.cells.es/cpascual/pythoncourse-intro/exercises), 
+   click on the file corresponding to the exercise and select `Edit`. 
+   Copy & Paste your code here and click on the `Commit Changes` button
 
-            git clone https://git.cells.es/YOUR_USER_NAME/pythoncourse-intro
-
-3. Go to the exercises directory in your downloaded/cloned directory and 
-   **work** on the already existing .py file corresponding to the exercise you 
-   want to solve.
-
-4. When finished, **upload** the solved exercise. *Suppose* you want to upload 
-   your solution for `exercise0X.py`
-   - If you downloaded and unzipped:
-      - go to `https://git.cells.es/cpascual/pythoncourse-intro/tree/master/exercises`
-      - click on the `exercise0X.py` file and click on `edit`
-      - Copy-paste your code in here
-      - Put some descriptive comment in the "Commit message" box
-      - click on "Commit Changes"
-   - If you cloned with git, just commit and push the changed file:
-
-            git add exercises/exercise0X.py
-            git commit exercises/exercise0X.py - m 'finished exercise0X'
-            git push origin/master
-
-5. When I **review** your solution, I will **add comments** to your file. You 
-   can **reply** with more comments.
-
-6. If, as a result of the review you want to **do more changes** just repeat 
-   steps 3 and 4
+4. You will be presented with a new page called `New Merge Request`. Just click 
+   on the `Submit merge request` button.
+   
+5. This will create a *merge-request* which is where I will add comments when I 
+   review the code that you wrote. You can also add comments in this 
+   merge-request. Note: You can access your merge-requests at any time from 
+   [here](http://git.cells.es/cpascual/pythoncourse-intro/merge_requests)
+   (tip: filter by "author" to see only your requests)
+ 
+6. If, as a result of the review, you want to resubmit your code, just close 
+   this merge-request and repeat steps 3-5.
 
  
 List of exercises
