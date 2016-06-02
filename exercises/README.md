@@ -8,16 +8,16 @@ comment the different approaches and common problems.
 The procedure for getting your exercises reviewed, is:
 
 1. **Fork** the python course repository (use the "Fork repository" button from 
-   [the project home page](https://gitcomputing.cells.es/cpascual/pythoncourse-intro).
+   [the project home page](https://git.cells.es/cpascual/pythoncourse-intro).
     This will create your personal "copy" of this project in:
-    `https://gitcomputing.cells.es/YOUR_USER_NAME/pythoncourse-intro`
+    `https://git.cells.es/YOUR_USER_NAME/pythoncourse-intro`
 
 2. **Download** your forked repo: 
    - You can use the "Download zip" button from: 
-    `https://gitcomputing.cells.es/YOUR_USER_NAME/pythoncourse-intro`
+    `https://git.cells.es/YOUR_USER_NAME/pythoncourse-intro`
    - Alternatively, advanced users may **clone** it using git:
 
-            git clone https://gitcomputing.cells.es/YOUR_USER_NAME/pythoncourse-intro
+            git clone https://git.cells.es/YOUR_USER_NAME/pythoncourse-intro
 
 3. Go to the exercises directory in your downloaded/cloned directory and 
    **work** on the already existing .py file corresponding to the exercise you 
@@ -26,7 +26,7 @@ The procedure for getting your exercises reviewed, is:
 4. When finished, **upload** the solved exercise. *Suppose* you want to upload 
    your solution for `exercise0X.py`
    - If you downloaded and unzipped:
-      - go to `https://gitcomputing.cells.es/cpascual/pythoncourse-intro/tree/master/exercises`
+      - go to `https://git.cells.es/cpascual/pythoncourse-intro/tree/master/exercises`
       - click on the `exercise0X.py` file and click on `edit`
       - Copy-paste your code in here
       - Put some descriptive comment in the "Commit message" box
