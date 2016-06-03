@@ -12,13 +12,13 @@ common problems/solutions.
 Procedure for submitting your exercises:
 ----------------------------------------
 
-1. Go to the [exercises page](http://git.cells.es/cpascual/pythoncourse-intro/exercises) 
+1. Go to the [exercises page](http://git.cells.es/cpascual/pythoncourse-intro/tree/master/exercises) 
    and download the file corresponding to the exercise that you want to solve
    
 2. Open the downloaded file (e.g., whith spyder) and solve the exercise, testing
    in your PC
 
-3. When finished, go back to the [exercises page](http://git.cells.es/cpascual/pythoncourse-intro/exercises), 
+3. When finished, go back to the [exercises page](http://git.cells.es/cpascual/pythoncourse-intro/tree/master/exercises), 
    click on the file corresponding to the exercise and select `Edit`. 
    Copy & Paste your code here and click on the `Commit Changes` button
 
