@@ -12,18 +12,21 @@ common problems/solutions.
 Procedure for submitting your exercises:
 ----------------------------------------
 
-1. Go to the [exercises page](http://git.cells.es/cpascual/pythoncourse-intro/tree/master/exercises) 
-   and download the file corresponding to the exercise that you want to solve
+1. Go to the [exercises page][1] and download the file corresponding to the 
+   exercise that you want to solve
    
 2. Open the downloaded file (e.g., whith spyder) and solve the exercise, testing
    in your PC
 
-3. When finished, go back to the [exercises page](http://git.cells.es/cpascual/pythoncourse-intro/tree/master/exercises), 
-   click on the file corresponding to the exercise and select `Edit`. 
-   Copy & Paste your code here and click on the `Commit Changes` button
+3. When finished, go back to the [exercises page from my repository][1]
+   (see important note below). Then click on the file corresponding to the 
+   exercise and select `Edit`. Copy & Paste your code here and click on the 
+   `Commit Changes` button
 
 4. You will be presented with a new page called `New Merge Request`. Just click 
-   on the `Submit merge request` button.
+   on the `Submit merge request` button. If you do not get here, it is probably 
+   because you are editing a file in you own repository instead of mine 
+   (see Note below).
    
 5. This will create a *merge-request* which is where I will add comments when I 
    review the code that you wrote. You can also add comments in this 
@@ -34,6 +37,16 @@ Procedure for submitting your exercises:
 6. If, as a result of the review, you want to resubmit your code, just close 
    this merge-request and repeat steps 3-5.
 
+
+**NOTE:** In step 3, make sure that you are editing the exercise file from 
+[exercises page from MY (cpascual) repository][1], **not yours**. 
+Note that if you have already submitted a merge-request, a *fork* (copy) of my 
+repository will have been created for you automatically with an address like 
+`http://git.cells.es/YOUR_USER_NAME/pythoncourse-intro`.
+But in order for me to review your solutions, you need to edit MY file so that 
+a merge-request is created.
+
+[1]: http://git.cells.es/cpascual/pythoncourse-intro/tree/master/exercises
  
 List of exercises
 =================
