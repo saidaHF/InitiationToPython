@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 
-
-#Solutions to scipy course
-#By carlos.pascual@cells.es
-
 """
 Exercise 1 (numpy IO)
 ----------------------
@@ -24,13 +20,13 @@ Tips:
 """
 
 import numpy
-input_file_name= 'sp8c.dat'
-output_file_name='sp2c.dat'
+input_file_name = 'sp8c.dat'
+output_file_name = 'sp2c.dat'
 
 
 # I am assuming I know the values of the header. See exercise 00 Part 2
 # for a implementation where the header is read.
-hdr_lines =  3
+hdr_lines = 3
 gain = 50.
 offset = 1000.
 
@@ -43,9 +39,8 @@ data = data.flatten()
 # calculate the time (column x)
 time = numpy.arange(data.size) * gain + offset
 
-#stack time and data as columns in a Nx2 matrix
-output = numpy.column_stack((time,data))
+# stack time and data as columns in a Nx2 matrix
+output = numpy.column_stack((time, data))
 
 # write to output file
 numpy.savetxt(output_file_name, output)
-
