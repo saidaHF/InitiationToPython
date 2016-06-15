@@ -45,7 +45,7 @@ print "x= %.5f" % x
 # we can help by giving the derivative if we know it
 # Note: in this case it is not necessary to increase maxiter
 def df(x):
-    return (1 - S.cos(x))
+    return 1 - S.cos(x)
 
 x = newton(f, guess, fprime=df)
 print "x= %.5f" % x

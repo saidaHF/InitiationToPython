@@ -53,12 +53,12 @@ Tips:
 """
 
 import scipy as S
-import scipy.linalg
+from scipy.linalg import inv, eig
 
 # step 2
 M = S.array([[1, 2, 0],
-             [0, 2, 0],
-             [0, 0, 3]])
+              [0, 2, 0],
+              [0, 0, 3]])
 
 print 'M=\n', M
 
@@ -90,18 +90,18 @@ print 'M2 \n: ', M2
 print 'Diagonal:', M2.diagonal()
 
 # step 6
-Minv = S.linalg.inv(M)
+Minv = inv(M)
 print "Minv:\n", Minv
 print "Minv x M:\n", S.dot(Minv, M).round(3)
 
 # step7
 print "Eigenvalues (w) and eigenvectors (v):"
-w, v = S.linalg.eig(M)
+w, v = eig(M)
 for i in xrange(len(w)):
     eigval = w[i]
     eigvec = v[:, i]
     print "w=", eigval, "v=", eigvec
-    print "M v = w v? :", S.dot(M, eigvec), eigval*eigvec, "?",
+    print "M v = w v? :", S.dot(M, eigvec), eigval * eigvec, "?",
     # compare the two solutions allowing for rounding errors:
     tolerance = 1e-5
     diff = S.dot(M, eigvec) - eigval * eigvec
