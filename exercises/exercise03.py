@@ -14,21 +14,21 @@ Exercise 3 (scipy for matrix operations)
 3. Find the sum of all the columns and of all the rows.
 
 4. Find the transpose of M. Compare the first column of M with the first row of
-its transpose (check if they are the same with the "==" operator). 
+its transpose (check if they are the same with the "==" operator).
 Make an "if" block that prints "Maths work" if the comparison is true.
 
 5. create a copy of M called M2. Change the element in the first row and
-second column (which is a 2) by its square root. Make sure that M did not 
+second column (which is a 2) by its square root. Make sure that M did not
 change. Then get the elements of the diagonal of M2
 
-6. invert M and then check that M multiplied by its inverse gives an Identity 
+6. invert M and then check that M multiplied by its inverse gives an Identity
 matrix (note: round off to 3 decimal points)
 
-7. Find the eigenvectors and eigenvalues of M. Then check that, for a given 
-eigenvalue (w) and its associated eigenvector (v), the following 
+7. Find the eigenvectors and eigenvalues of M. Then check that, for a given
+eigenvalue (w) and its associated eigenvector (v), the following
 is true: M v = w v
 
- 
+
 Tips:
 
 

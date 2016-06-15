@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 
-#Solutions to scipy course
-#By carlos.pascual@cells.es
+# Solutions to scipy course
+# By carlos.pascual@cells.es
 
 """
 Exercise 3 (scipy for matrix operations)
@@ -55,15 +55,15 @@ Tips:
 import scipy as S
 import scipy.linalg
 
-#step 2
-M = S.array([[1,2,0],
-             [0,2,0],
-             [0,0,3]])
+# step 2
+M = S.array([[1, 2, 0],
+             [0, 2, 0],
+             [0, 0, 3]])
 
 print 'M=\n', M
 
-#step 3
-#I will demonstrate two alternative ways of doing it:
+# step 3
+# I will demonstrate two alternative ways of doing it:
 
 # a) calculate the sum of rows using the using the axis parameter
 sumcols = M.sum(axis=1)  # 1 means summing over the second index (first is 0))!
@@ -72,39 +72,39 @@ print "Sum of rows:",  sumcols
 # b)  calculate the sum of columns using slicing and then summing (slower) 
 nrows, ncols = M.shape
 for i in xrange(ncols):
-    print "the sum of column %i is %i" % (i, M[:,i].sum()) 
+    print "the sum of column %i is %i" % (i, M[:, i].sum()) 
 
-#step 4
+# step 4
 MT = M.transpose()
-print "1st row of M : ", M[:,0]
-print "1st col of MT: ",MT[0,:]
-print "element-wise comparison: ", M[:,0] == MT[0,:]
-if (M[:,0] == MT[0,:]).all():
+print "1st row of M : ", M[:, 0]
+print "1st col of MT: ", MT[0,:]
+print "element-wise comparison: ", M[:, 0] == MT[0,:]
+if (M[:, 0] == MT[0,:]).all():
     print "Maths work"
 
-#step 5
+# step 5
 M2 = M.astype('float')
-M2[0,1] = S.sqrt(M2[0,1])
+M2[0, 1] = S.sqrt(M2[0, 1])
 print 'M: \n', M
-print 'M2 \n: ',M2
+print 'M2 \n: ', M2
 print 'Diagonal:', M2.diagonal()
 
-#step 6
-Minv=S.linalg.inv(M)
+# step 6
+Minv = S.linalg.inv(M)
 print "Minv:\n", Minv
 print "Minv x M:\n", S.dot(Minv, M).round(3)
 
-#step7
+# step7
 print "Eigenvalues (w) and eigenvectors (v):"
-w,v = S.linalg.eig(M)
+w, v = S.linalg.eig(M)
 for i in xrange(len(w)):
     eigval = w[i]
-    eigvec = v[:,i]
+    eigvec = v[:, i]
     print "w=", eigval, "v=", eigvec
     print "M v = w v? :", S.dot(M, eigvec), eigval*eigvec, "?",
-    #compare the two solutions allowing for rounding errors:
+    # compare the two solutions allowing for rounding errors:
     tolerance = 1e-5
-    diff = S.dot(M,eigvec) - eigval * eigvec
+    diff = S.dot(M, eigvec) - eigval * eigvec
     if (abs(diff).max() < tolerance): 
         print "yes!"
     else:

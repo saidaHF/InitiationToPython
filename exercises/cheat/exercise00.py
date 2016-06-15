@@ -62,14 +62,14 @@ text = f.read()  # the whole file is read as text
 f.close()
 words = text.split()  # we split on white space (includes blanks, tabs,...)
 
-offset = float(words[1+words.index('OFFSET')])
-gain = float(words[1+words.index('GAIN')])
+offset = float(words[1 + words.index('OFFSET')])
+gain = float(words[1 + words.index('GAIN')])
 data = [float(w) for w in words[1 + words.index('DATA'):]]   # note the ':'
 
 # calculate time and normalised counts
 time = [(i * gain + offset) for i in range(len(data))]
 maxdata = max(data)
-normalised = [d/maxdata for d in data]
+normalised = [d / maxdata for d in data]
 
 # write to output file
 f = open(outputfilename, 'w')
