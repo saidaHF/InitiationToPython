@@ -21,7 +21,7 @@ What this course will **not** teach you:
 - how to create GUIs from scratch, or how to modify existing GUI widgets programmatically
 - how to write sardana macros (although it will give you a lot of tools that will help you learn that easily)
 
-For more details, you can have a look at:
+## Course contents:
 
 - [Slides](pythonIntro-slides.odp) for the course (they are just and index of topics that will be 
   explained in practice.
