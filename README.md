@@ -32,8 +32,8 @@ What this course will **not** teach you:
 The course does not require any previous experience with python. Familiarity 
 with other programming languages will help you a lot, but it is also not required.
 
-But the course requires **commitment**.  Each session will take half a day (~4h) 
-and participants are expected to dedicate *at least* 2h after each session 
+But the course requires **commitment**. It consists on 5 sessions of half a day 
+(~4h) and participants are expected to dedicate *at least* 2h after each session 
 working on the proposed exercises (the exact time depends a lot on the previous 
 programming experience of the participant). **Attending to sessions and doing 
 the exercises is a strong requisite to be able to follow the next session**, 
