@@ -45,10 +45,7 @@ days.
 
 **IMPORTANT**: Make sure to follow this checklist **before** starting the course:
 
-- make sure that python 2.x, ipython, matplotlib, scipy and spyder are 
-  installed in your PC. If you use windows, just install 
-  [PythonXY](http://python-xy.github.io). Try at least to launch spyder once. 
-  If you need assistance, please contact Systems.
+- install the needed software (python2.7, scipy, pyqtgraph and an IDE). It is highly recommended that you follow [these instructions](pre-course.md)). 
 
 - Familiarize yourself with the most basic concepts of python:
 
@@ -56,5 +53,5 @@ days.
 
   - Follow [this tutorial](http://introtopython.org/var_string_num.html)
 
-  - And also follow the first part (till the first block of exercises) of
+  - And also follow **the first part** (till the first block of exercises) of
     [this other tutorial](http://introtopython.org/lists_tuples.html)
