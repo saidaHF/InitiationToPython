@@ -55,9 +55,9 @@ days.
     (Expected required time: 30'-60'  , Priority: very high)
 
   - Follow [this tutorial](http://introtopython.org/var_string_num.html)
-    (Expected required time: 60'-180'  , Priority: very high)
+    (Expected required time: 60'-180'  , Priority: high)
 
   - And also follow **the first part** (till the first block of exercises) of
     [this other tutorial](http://introtopython.org/lists_tuples.html)
-    (Expected required time: 10'-20' , Priority: very high)
+    (Expected required time: 10'-20' , Priority: high)
 
