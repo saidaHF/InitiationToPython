@@ -45,13 +45,19 @@ days.
 
 **IMPORTANT**: Make sure to follow this checklist **before** starting the course:
 
-- install the needed software (python2.7, scipy, pyqtgraph and an IDE). It is highly recommended that you follow [these instructions](pre-course.md)). 
+- install the needed software (python2.7, scipy, pyqtgraph and an IDE). It is 
+  highly recommended that you follow [these instructions](pre-course.md)). 
+  (Expected required time: 20'-60'  , Priority: very high)
 
 - Familiarize yourself with the most basic concepts of python:
 
   - Read [this intro](http://docs.python.org/2/tutorial/introduction.html)
+    (Expected required time: 30'-60'  , Priority: very high)
 
   - Follow [this tutorial](http://introtopython.org/var_string_num.html)
+    (Expected required time: 60'-180'  , Priority: very high)
 
   - And also follow **the first part** (till the first block of exercises) of
     [this other tutorial](http://introtopython.org/lists_tuples.html)
+    (Expected required time: 10'-20' , Priority: very high)
+
