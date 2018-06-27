@@ -21,7 +21,7 @@ Which installer to choose?
 - python3 or python2? It does not matter. Both will allow you to create py2 and py3 environments.
 
 ### Install miniconda
-If working on windows, execute the installer
+If working on windows, execute the installer, and select default options.
 
 If working on linux, use: `bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda`  (adjust the name of the .sh file to the one you downloaded). **Do not forget to pass the -b option** (we do not want the PATH variable to be adjusted by conda)
 
@@ -29,7 +29,7 @@ If working on linux, use: `bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/mi
 
 First enter into a conda session:
 
-- on windows just open the "Anaconda prompt" from the start Menu
+- on windows just open the "Anaconda prompt" from the start Menu->Anaconda
 - On linux, run: `source $HOME/miniconda/bin/activate`
 
 Now create a **python2** environment called "course" with the programs that we use in the course:
