@@ -34,7 +34,7 @@ First enter into a conda session:
 
 Now create a **python2** environment called "course" with the programs that we use in the course:
 
-`conda create -n course -c conda-forge python=2 pyqt=4 ipython scipy matplotlib pyqtgraph spyder`
+`conda create -n course -c conda-forge python=2 pyqt=4 ipython scipy matplotlib pyqtgraph spyder cython pillow pythonqwt guidata lxml`
 
 
 Now you can enter the newly created environment (activate it) with:
