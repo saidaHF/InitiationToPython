@@ -34,16 +34,21 @@ First enter into a conda session:
 
 Now create a **python2** environment called "course" with the programs that we use in the course:
 
-`conda create -n course -c conda-forge python=2 pyqt=4 ipython scipy matplotlib pyqtgraph spyder cython pillow pythonqwt guidata lxml`
+`conda create -n course -c conda-forge python=2 pyqt=4 ipython scipy matplotlib pyqtgraph spyder cython pillow lxml`
 
 
 Now you can enter the newly created environment (activate it) with:
 
 `conda activate course`
 
+
 Within the activated course environment, check that spyder can be launched with the following command:
 
 `spyder`
+
+And then you can also install the following two packages (within the course environment):
+
+`conda install -c conda-forge pythonqwt guidata`
 
 See more info in:
 https://conda.io/docs/user-guide/getting-started.html
