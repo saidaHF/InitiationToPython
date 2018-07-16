@@ -79,7 +79,8 @@ Simple exercises to get used to python basics.
         phonebook = { "John" : 7566,  "Jack" : 7264,  "Jill" : 2781}
 
   Add "Jake" to the phonebook with the phone number 938273443,  and remove Jill
-  from the phonebook. Then print the phonebook in alphabetical order
+  from the phonebook. Then print the phonebook (name and number) in 
+  alphabetical name order
 
 
 
