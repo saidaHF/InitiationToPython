@@ -47,6 +47,7 @@ Tips:
 - [Official Solution](exercises/exercise04.py)
 """
 
+from __future__ import print_function
 import scipy as S
 import matplotlib.pyplot as plt
 from scipy.signal import medfilt
@@ -61,7 +62,7 @@ smoothy = medfilt(datay, 7)
 
 # polynomial fit
 [a, b, c] = S.polyfit(datax, datay, 2)
-print "FIT to f(x)=a*x**2+b*x+c : a=%.3g\tb=%.3g\tc=%.3g" % (a, b, c)
+print ("FIT to f(x)=a*x**2+b*x+c : a=%.3g\tb=%.3g\tc=%.3g" % (a, b, c))
 fittedy = a * datax**2 + b * datax + c
 
 # plotting everything

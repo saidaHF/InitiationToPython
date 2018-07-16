@@ -28,6 +28,7 @@ Tips:
 - [Official Solution](exercises/exercise05.py)
 """
 
+from __future__ import print_function
 import scipy as S
 from scipy.optimize import newton
 
@@ -39,7 +40,7 @@ def f(x):
 # Then I need to increase the maxiter to avoid a non-convergence exception
 guess = 1
 x = newton(f, guess, maxiter=1000)
-print "x= %.5f" % x
+print ("x= %.5f" % x)
 
 
 # we can help by giving the derivative if we know it
@@ -48,4 +49,4 @@ def df(x):
     return 1 - S.cos(x)
 
 x = newton(f, guess, fprime=df)
-print "x= %.5f" % x
+print ("x= %.5f" % x)
