@@ -85,4 +85,5 @@ https://www.jetbrains.com/pycharm/
   - Location: choose the downloaded course dir (or cloned repo dir, if you used git)
   - Interpreter -> **Existing** interpreter -> `...` -> Conda environment -> 
   and choose the python executable that you found out before for the "course" conda environment.
+- Check that the `Settings-> editor-> inspections-> code compatibility inspections` is set to 2.7, 3.5 and 3.6
 
