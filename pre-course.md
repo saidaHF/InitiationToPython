@@ -56,6 +56,8 @@ https://conda.io/docs/user-guide/getting-started.html
 
 ## Install Pycharm community edition
 
+This is optional for the intro course, but very recommended for more advanced courses.
+
 PyCharm is a very complete IDE (Integrated Development Environment). I recommend it over spyder when getting into "serious" programming. Spyder is fine (and simpler to use) for a more casual programmer.
 
 See download and installation instructions in:
@@ -73,4 +75,14 @@ https://www.jetbrains.com/pycharm/
 - Installation instructions for windows:
     - run the installer .exe
 
+### Create a PyCharm project for the course
+
+- Download (or git-clone) course files
+- In the conda prompt where the "course" environment is activated, type 
+  `where python` (in windows) or `which python` (in linux) to find out the path 
+  of the python executable for the "course" environment.
+- Open PyCharm and "Create New  Project"
+  - Location: choose the downloaded course dir (or cloned repo dir, if you used git)
+  - Interpreter -> **Existing** interpreter -> `...` -> Conda environment -> 
+  and choose the python executable that you found out before for the "course" conda environment.
 
