@@ -77,7 +77,7 @@ https://www.jetbrains.com/pycharm/
 
 ### Create a PyCharm project for the course
 
-- Download (or git-clone) course files
+- Download (or git-clone) the course files
 - In the conda prompt where the "course" environment is activated, type 
   `where python` (in windows) or `which python` (in linux) to find out the path 
   of the python executable for the "course" environment.
