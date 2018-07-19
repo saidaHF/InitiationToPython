@@ -33,8 +33,8 @@ offset = 1000.
 # read the data (I skip the 3 first rows -the header-)
 data = numpy.loadtxt(input_file_name, skiprows=hdr_lines)
 
-# make a vector out of the Nx8 matrix read by loadtxt()
-data = data.flatten()
+# make a vector out of the Nx8 matrix read by loadtxt() and normalise it
+data = data.flatten() / data.max()
 
 # calculate the time (column x)
 time = numpy.arange(data.size) * gain + offset
