@@ -34,7 +34,7 @@ First enter into a conda session:
 
 Now create a **python2** environment called "course" with the programs that we use in the course:
 
-`conda create -n course python=2 pyqt=4 ipython scipy matplotlib pyqtgraph spyder cython pillow lxml`
+`conda create -n course python=2 pyqt=4 ipython scipy matplotlib pyqtgraph spyder cython pillow lxml git`
 
 
 Now you can enter the newly created environment (activate it) with:
@@ -50,9 +50,22 @@ And then you can also install the following two packages (within the course envi
 
 `conda install -c conda-forge pythonqwt guidata`
 
-See more info in:
-https://conda.io/docs/user-guide/getting-started.html
 
+Install PyTango
+
+- For linux: 
+ `conda install -c tango-controls pytango`
+
+- For windows:
+  `pip install --only-binary :all: pytango`
+
+Install Taurus and some extra dependencies
+
+```
+pip install guiqwt
+pip install taurus
+pip install git+https://github.com/taurus-org/taurus_pyqtgraph.git
+```
 
 ## Install Pycharm community edition
 
