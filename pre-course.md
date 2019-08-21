@@ -59,18 +59,10 @@ PyCharm is a very complete IDE (Integrated Development Environment). I recommend
 
 See download and installation instructions in:
 
-https://www.jetbrains.com/pycharm/
+https://www.jetbrains.com/pycharm/download
 
-- Installation instructions for linux:
-    - Copy the pycharm-2018.1.4.tar.gz to the desired installation location
-    (make sure you have rw permissions for that directory)
-    - Unpack the pycharm-2018.1.4.tar.gz using the following command:
-    tar -xzf pycharm-2018.1.4.tar.gz
-    - Remove the pycharm-2018.1.4.tar.gz to save disk space (optional)
-    - Run pycharm.sh from the bin subdirectory
+Note: I recommend installing the **"Free Community Edition"** (not the "Professional" one). The CE is powerful enough and Open Source.
 
-- Installation instructions for windows:
-    - run the installer .exe
 
 ### Create a PyCharm project for the course
 
