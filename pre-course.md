@@ -1,12 +1,12 @@
 # Pre-course installation instructions
 
 For this course, we need the following software installed and working:
-- python 2.7
+- python
 - ipython
 - scipy
 - matplotlib
 - pyqtgraph
-- an IDE or text editor: I recommend Pycharm and/or spyder 
+- an IDE or text editor: I recommend Pycharm or spyder 
 
 The following instructions will use miniconda to install everything (except PyCharm). If you work on debian/ubuntu, you can alternatively install all this with the package manager (although the miniconda instructions would also work for you too). 
 
@@ -18,7 +18,7 @@ Download the miniconda installer from https://conda.io/miniconda.html
 
 Which installer to choose?
 - 32b or 64b? If your OS is 64b, choose 64b
-- python3 or python2? It does not matter. Both will allow you to create py2 and py3 environments.
+- python3 or python2? Better choose py3.
 
 ### Install miniconda
 If working on windows, execute the installer, and select default options.
@@ -32,39 +32,23 @@ First enter into a conda session:
 - on windows just open the "Anaconda prompt" from the start Menu->Anaconda
 - On linux, run: `source $HOME/miniconda/bin/activate`
 
-Now create a **python2** environment called "course" with the programs that we use in the course:
 
-`conda create -n course python=2 pyqt=4 ipython scipy matplotlib pyqtgraph spyder cython pillow lxml git`
+Now create a new environment with the programs that we use in the course (follow
+[these instructions](http://taurus-scada.org/users/getting_started.html#installing-in-a-conda-environment-windows-and-linux))
 
-
-Now you can enter the newly created environment (activate it) with:
-
-`conda activate course`
-
-
-Within the activated course environment, check that spyder can be launched with the following command:
-
-`spyder`
-
-And then you can also install the following two packages (within the course environment):
-
-`conda install -c conda-forge pythonqwt guidata`
-
-
-Install PyTango
-
-- For linux: 
- `conda install -c tango-controls pytango`
-
-- For windows:
-  `pip install --only-binary :all: pytango`
 
 Install Taurus and some extra dependencies
 
 ```
-pip install guiqwt
 pip install taurus
 pip install git+https://github.com/taurus-org/taurus_pyqtgraph.git
+```
+
+... and finally check that it all works, e.g.:
+
+```
+taurus --help
+taurus form "eval:rand()"
 ```
 
 ## Install Pycharm community edition
