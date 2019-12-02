@@ -38,8 +38,56 @@ alternatively also install the packages from the official repositories
 
 # interactive mode vs scripts
 
-- `ipython`
+- `ipython` (vs `python`)
 - `python hello.py`
-- Space matters!!! (set tabs=4 spaces)
+- Space matters!!! (set tabs=4 spaces in your editor)
 - For a "matlab-like" IDE, use [spyder](https://www.spyder-ide.org/) or [jupyter lab](https://jupyter.org/)
 - For "serious" development, we recommend [PyCharm **Community Edition**](https://www.jetbrains.com/pycharm/download)
+
+---
+
+# Python types
+
+- Types:
+    - [Numbers](https://docs.python.org/3.7/tutorial/introduction.html#numbers) 
+    - [Strings](https://docs.python.org/3.7/tutorial/introduction.html#strings)
+    - `None` 
+    - [Lists](https://docs.python.org/3.7/tutorial/introduction.html#lists) and [More on lists](https://docs.python.org/3.7/tutorial/datastructures.html#more-on-lists)
+    - [Tuples](https://docs.python.org/3.7/tutorial/datastructures.html#tuples-and-sequences)
+    - [Sets](https://docs.python.org/3.7/tutorial/datastructures.html#sets)
+    - [Dictionaries](https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries)
+    - (Mention numpy arrays )
+- concepts:
+    - everything is a class: `type()`
+    - operators
+    - slicing
+    - (un)packing: `a, b, c = [1, 2, 3]`
+    - List comprehensions:  `["foo%i" % i for i in range(3)]`
+
+---
+
+# Flow control
+
+- while
+  ```python
+  a = 0
+  while a < 10:
+      print(a)
+      a += 1
+  ```
+
+- [If ...elif...else](https://docs.python.org/3.7/tutorial/controlflow.html#if-statements) 
+- [for](https://docs.python.org/3.7/tutorial/controlflow.html#for-statements)
+- [range](https://docs.python.org/3.7/tutorial/controlflow.html#the-range-function) (mention python2's `xrange`)
+- [break, continue](https://docs.python.org/3.7/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops) and [pass](https://docs.python.org/3.7/tutorial/controlflow.html#pass-statements)
+- [try-except](https://docs.python.org/3.7/tutorial/errors.html#exceptions) and [using them for flow control](https://docs.python.org/3.7/tutorial/errors.html#handling-exceptions)
+  ```python
+  for n in range(-5, 5):
+    if n == 3:
+        continue
+    try:
+        a = 1 / n
+        print(n, a)
+    except ZeroDivisionError:
+        print(n, '---')
+  ```
