@@ -23,8 +23,8 @@ What this course will **not** teach you:
 
 ## Course contents:
 
-- [Slides](pythonIntro-slides.odp) for the course (they are just and index of topics that will be 
-  explained in practice.
+- [Slides](slides.md) for the course (they are just and index of topics that will be 
+  explained during the lessons.
 - Proposed [exercises](exercises) and my [solutions](exercises/cheat) to them
 
 ## Participant requirements
