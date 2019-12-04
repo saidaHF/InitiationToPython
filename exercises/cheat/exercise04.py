@@ -47,7 +47,7 @@ Tips:
 - [Official Solution](exercises/exercise04.py)
 """
 
-from __future__ import print_function
+
 import scipy as S
 import matplotlib.pyplot as plt
 from scipy.signal import medfilt

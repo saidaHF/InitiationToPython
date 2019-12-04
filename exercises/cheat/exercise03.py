@@ -4,7 +4,7 @@
 # Solutions to scipy course
 # By carlos.pascual@cells.es
 
-from __future__ import print_function
+
 
 """
 Exercise 3 (scipy for matrix operations)
@@ -54,7 +54,7 @@ Tips:
 
 """
 
-from __future__ import print_function
+
 import scipy as S
 from scipy.linalg import inv, eig
 
@@ -114,4 +114,4 @@ for i in range(len(w)):
         print ("no")
     print ("----")
 
-raw_input('press enter to exit')
+input('press enter to exit')

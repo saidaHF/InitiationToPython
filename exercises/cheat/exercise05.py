@@ -28,7 +28,7 @@ Tips:
 - [Official Solution](exercises/exercise05.py)
 """
 
-from __future__ import print_function
+
 import scipy as S
 from scipy.optimize import newton
 

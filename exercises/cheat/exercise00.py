@@ -77,4 +77,4 @@ for i in range(len(data)):  # note: think how to do this for-loop using zip()
     f.write('%f\t%f\n' % (time[i], normalised[i]))
 f.close()
 
-raw_input('press enter to finish')  # useful when launching outside a console
+input('press enter to finish')  # useful when launching outside a console
