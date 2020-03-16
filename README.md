@@ -17,7 +17,7 @@ At the end of this course you should be able to:
 
 What this course will **not** teach you:
 
-- object-oriented programming (see [the python-intermediate course](https://git.cells.es/cpascual/pythoncourse-intermediate))
+- object-oriented programming (see [the python-intermediate course](https://gitlab.com/alba-synchrotron/controls-section/pythoncourse-intermediate))
 - how to create GUIs from scratch, or how to modify existing GUI widgets programmatically
 - how to write sardana macros (although it will give you a lot of tools that will help you learn that easily)
 

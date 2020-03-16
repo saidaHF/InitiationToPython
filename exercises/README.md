@@ -31,7 +31,7 @@ Procedure for submitting your exercises:
 5. This will create a *merge-request* which is where I will add comments when I 
    review the code that you wrote. You can also add comments in this 
    merge-request. Note: You can access your merge-requests at any time from 
-   [here](http://git.cells.es/cpascual/pythoncourse-intro/merge_requests)
+   [here](http://gitlab.com/alba-synchrotron/controls-section/pythoncourse-intro/merge_requests)
    (tip: filter by "author" to see only your requests)
  
 6. If, as a result of the review, you want to resubmit your code, just close 
@@ -47,7 +47,7 @@ my repository will have been created for you automatically.
 But in order for me to review your solutions, you need to edit *MY* file so that 
 a merge-request is created.
 
-[1]: http://git.cells.es/cpascual/pythoncourse-intro/tree/master/exercises
+[1]: http://gitlab.com/alba-synchrotron/controls-section/pythoncourse-intro/tree/master/exercises
  
 List of exercises
 =================
