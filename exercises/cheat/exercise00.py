@@ -53,8 +53,8 @@ Tips:
 """
 
 
-inputfilename = 'sp8c.dat'
-outputfilename = 'sp2c.dat'
+inputfilename = "sp8c.dat"
+outputfilename = "sp2c.dat"
 
 # read the spectrum
 f = open(inputfilename, "r")
@@ -62,9 +62,9 @@ text = f.read()  # the whole file is read as text
 f.close()
 words = text.split()  # we split on white space (includes blanks, tabs,...)
 
-offset = float(words[1 + words.index('OFFSET')])
-gain = float(words[1 + words.index('GAIN')])
-data = [float(w) for w in words[1 + words.index('DATA'):]]   # note the ':'
+offset = float(words[1 + words.index("OFFSET")])
+gain = float(words[1 + words.index("GAIN")])
+data = [float(w) for w in words[1 + words.index("DATA") :]]  # note the ':'
 
 # calculate time and normalised counts
 time = [(i * gain + offset) for i in range(len(data))]
@@ -72,9 +72,9 @@ maxdata = max(data)
 normalised = [d / maxdata for d in data]
 
 # write to output file
-f = open(outputfilename, 'w')
+f = open(outputfilename, "w")
 for i in range(len(data)):  # note: think how to do this for-loop using zip()
-    f.write('%f\t%f\n' % (time[i], normalised[i]))
+    f.write("%f\t%f\n" % (time[i], normalised[i]))
 f.close()
 
-input('press enter to finish')  # useful when launching outside a console
+input("press enter to finish")  # useful when launching outside a console

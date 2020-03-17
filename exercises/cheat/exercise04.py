@@ -53,17 +53,17 @@ import matplotlib.pyplot as plt
 from scipy.signal import medfilt
 
 # generate data
-datax = S.arange(-5, 5, .1)
-datay0 = 3 * datax**2 + 5 * datax - 10
-datay = S.random.normal(loc=datay0, scale=10.)
+datax = S.arange(-5, 5, 0.1)
+datay0 = 3 * datax ** 2 + 5 * datax - 10
+datay = S.random.normal(loc=datay0, scale=10.0)
 
 # filter
 smoothy = medfilt(datay, 7)
 
 # polynomial fit
 [a, b, c] = S.polyfit(datax, datay, 2)
-print ("FIT to f(x)=a*x**2+b*x+c : a=%.3g\tb=%.3g\tc=%.3g" % (a, b, c))
-fittedy = a * datax**2 + b * datax + c
+print("FIT to f(x)=a*x**2+b*x+c : a=%.3g\tb=%.3g\tc=%.3g" % (a, b, c))
+fittedy = a * datax ** 2 + b * datax + c
 
 # plotting everything
 plt.plot(datax, datay0, "b-")

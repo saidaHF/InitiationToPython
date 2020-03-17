@@ -25,21 +25,21 @@ from matplotlib import pyplot as plt
 # note: to use the alternative pyplot implementation from guiqwt, just do:
 # from guiqwt import pyplot as plt
 
-inputfilename = 'sp2c.dat'
+inputfilename = "sp2c.dat"
 
 time, norm = numpy.loadtxt(inputfilename, unpack=True)
 
 # show in linear scale
-plt.title(inputfilename + ' (linear)')
-plt.xlabel('time [ns]')
-plt.ylabel('yield [arbitrary]')
+plt.title(inputfilename + " (linear)")
+plt.xlabel("time [ns]")
+plt.ylabel("yield [arbitrary]")
 plt.plot(time, norm)
 plt.show()
 
 # show in log scale
-plt.title(inputfilename + ' (linear)')
-plt.xlabel('time [ns]')
-plt.ylabel('yield [arbitrary]')
-plt.title(inputfilename + ' (log)')
+plt.title(inputfilename + " (linear)")
+plt.xlabel("time [ns]")
+plt.ylabel("yield [arbitrary]")
+plt.title(inputfilename + " (log)")
 plt.semilogy(time, norm)
 plt.show()

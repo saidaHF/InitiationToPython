@@ -20,15 +20,16 @@ Tips:
 """
 
 import numpy
-input_file_name = 'sp8c.dat'
-output_file_name = 'sp2c.dat'
+
+input_file_name = "sp8c.dat"
+output_file_name = "sp2c.dat"
 
 
 # I am assuming I know the values of the header. See exercise 00 Part 2
 # for a implementation where the header is read.
 hdr_lines = 3
-gain = 50.
-offset = 1000.
+gain = 50.0
+offset = 1000.0
 
 # read the data (I skip the 3 first rows -the header-)
 data = numpy.loadtxt(input_file_name, skiprows=hdr_lines)
