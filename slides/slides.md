@@ -2,9 +2,13 @@
 
 The following is just an check-list of topics to cover, with references to other tutorials
 
-[These slides](/controls-section/pythoncourse-intro/slides) are available online in:
+These slides are available online in:
 
 https://alba-synchrotron.gitlab.io/controls-section/pythoncourse-intro/
+
+And their source is in:
+
+https://gitlab.com/alba-synchrotron/controls-section/pythoncourse-intro/
 
 ---
 
@@ -23,7 +27,7 @@ https://alba-synchrotron.gitlab.io/controls-section/pythoncourse-intro/
 
 # Installation:
     
-for this course we will use conda (see the pre-course info)
+For this course we will use conda (see the pre-course info)
 but if you use reasonably recent linux distro, you may 
 alternatively also install the packages from the official repositories
 
