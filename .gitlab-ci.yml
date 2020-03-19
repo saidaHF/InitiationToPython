@@ -3,7 +3,7 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
-  - cp slides.md public/
+  - cp slides public
   artifacts:
     paths:
     - public

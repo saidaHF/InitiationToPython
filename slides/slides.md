@@ -2,6 +2,10 @@
 
 The following is just an check-list of topics to cover, with references to other tutorials
 
+[These slides](/controls-section/pythoncourse-intro/slides) are available online in:
+
+https://alba-synchrotron.gitlab.io/controls-section/pythoncourse-intro/
+
 ---
 
 # Getting started
@@ -306,20 +310,6 @@ https://pytango.readthedocs.io/en/stable/quicktour.html
 
 - `taurus newgui`
     - http://taurus-scada.org/users/ui/taurusgui.html
-
----
-
-# Exercises
-
-- After the 1st session:
-    - [warmup exercises](/exercises/warmup.py)
-- After the 2nd session:
-    - [exercise00](/exercises/exercise00.py) 
-- After the 3rd session:
-    - [exercise01](/exercises/exercise01.py), [exercise02](/exercises/exercise02.py) and [exercise03](/exercises/exercise03.py)
-- After the 4th session:
-    - [exercise04](/exercises/exercise04.py) and [exercise05](/exercises/exercise05.py)
-- After 5th session
 
 
 
