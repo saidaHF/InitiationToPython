@@ -62,7 +62,9 @@ The interactive examples in this course will be run with python 3.7
     - [Tuples](https://docs.python.org/3.7/tutorial/datastructures.html#tuples-and-sequences)
     - [Sets](https://docs.python.org/3.7/tutorial/datastructures.html#sets)
     - [Dictionaries](https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries)
+    - lazy iterables (`range` objects, iterators,...)
     - (Mention numpy arrays )
+
 - concepts:
     - everything is a class: `type()`
     - operators
@@ -84,7 +86,7 @@ The interactive examples in this course will be run with python 3.7
 
 - [If ...elif...else](https://docs.python.org/3.7/tutorial/controlflow.html#if-statements) 
 - [for](https://docs.python.org/3.7/tutorial/controlflow.html#for-statements)
-- [range](https://docs.python.org/3.7/tutorial/controlflow.html#the-range-function) (mention python2"s `xrange`)
+- [range](https://docs.python.org/3.7/tutorial/controlflow.html#the-range-function)
 - [break, continue](https://docs.python.org/3.7/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops) and [pass](https://docs.python.org/3.7/tutorial/controlflow.html#pass-statements)
 - [try-except](https://docs.python.org/3.7/tutorial/errors.html#exceptions) and [using them for flow control](https://docs.python.org/3.7/tutorial/errors.html#handling-exceptions)
   ```python
