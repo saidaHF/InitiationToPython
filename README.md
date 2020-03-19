@@ -23,7 +23,8 @@ What this course will **not** teach you:
 
 ## Course contents:
 
-- [Slides](slides.md) for the course (they are just and index of topics that will be 
+- [Slides](https://alba-synchrotron.gitlab.io/controls-section/pythoncourse-intro/) 
+  for the course (they are just and index of topics that will be 
   explained during the lessons.
 - Proposed [exercises](exercises) and my [solutions](exercises/cheat) to them
 
