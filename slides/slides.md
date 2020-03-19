@@ -31,16 +31,18 @@ For this course we will use conda (see the pre-course info)
 but if you use reasonably recent linux distro, you may 
 alternatively also install the packages from the official repositories
 
-## Which version of python (2.x vs 3.x): 
+## Which version of python (2.x vs 3.x)?: 
 
-- As a general rule, (at the time of writing (December 2019)
+- As a general rule, (at the time of writing, December 2020)
   we recommend using at least 3.7
 - ... or 3.5 if you need to run code on a debian stretch (e.g. in ALBA debian machines)
 - ... or 2.7 only if you need to run code in very old machines (e.g. old SuSe machines at ALBA)
 
+The interactive examples in this course will be run with python 3.7
+
 ---
 
-# interactive mode vs scripts
+# Interactive mode vs scripts
 
 - `ipython` (vs `python`)
 - `python hello.py`
