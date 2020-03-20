@@ -62,7 +62,7 @@ The interactive examples in this course will be run with python 3.7
     - [Tuples](https://docs.python.org/3.7/tutorial/datastructures.html#tuples-and-sequences)
     - [Sets](https://docs.python.org/3.7/tutorial/datastructures.html#sets)
     - [Dictionaries](https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries)
-    - lazy iterables (`range` objects, iterators,...)
+    - lazy iterables ([`range` objects](https://docs.python.org/3.7/tutorial/controlflow.html#the-range-function), iterators,...)
     - (Mention numpy arrays )
 
 - concepts:
