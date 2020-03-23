@@ -46,7 +46,7 @@ days.
 
 **IMPORTANT**: Make sure to follow this checklist **before** starting the course:
 
-- install the needed software (python2.7, scipy, pyqtgraph and an IDE). It is 
+- install the needed software (python, scipy, pyqtgraph, an IDE...). It is 
   highly recommended that you follow [these instructions](pre-course.md)). 
   *(Expected required time: 20'-60'  , Priority: very high)*
 
