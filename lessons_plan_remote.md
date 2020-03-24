@@ -3,55 +3,54 @@
 This is a sessions plan for the remote edition of the course during march-april 2020
 
 ## Block 0:
-- Objective: solve installation issues. All participants end with a working python and course environment
+- Topics: solve installation issues. All participants end with a working python and course environment
 - Duration: 1-2h
 
 ## Block 1:
-- Objective: Python types I: numbers and strings, concept of object
+- Topics: Python types I: numbers and strings, concept of object
 - Duration: 1h
-- exercises: first block of warmup exercises
+- exercises: warmup1
 
 ## Block 2:
-- Objective: Python types II: lists, tuples, sets, dicts, ...
+- Topics: Python types II: lists, tuples, sets, dicts, ...
 - Duration: 2h
-- exercises: rest of warmup exercises
+- exercises: warmup2
 
 ## Block 3:
-- Objective: Flow control
+- Topics: File I/O, Flow control. 
 - Duration: 2h
-- exercises: first part of exercise1
+- exercises: converter1
 
 ## Block 4:
-- Objective: discuss solutions of exercise1.1 . More on flow control. Exceptions.
+- Topics: discuss solutions of converter1. More on flow control. Exceptions.
 - Duration: 1h
-- exercises: second part of exercise1
+- exercises: converter2
 
 ## Block 5:
-- Objective: functions, 
+- Topics: discuss solutions of converter2. Functions, arguments, kwargs
 - Duration: 1-2h
-- exercises: exercise2
+- exercises: converter3
 
 ## Block 6:
-- Objective: modules, numpy
+- Topics: discuss solutions of converter3. importing modules, numpy intro
 - Duration: 1-2h
-- exercises: exercise2, exercise3, exercise4
+- exercises: converter4, matplot1
 
 ## Block 7:
-- Objective: 
+- Topics: discuss solutions of converter4. More on numpy
+- Duration: 1-2h
+- exercises: algebra1
+
+## Block 8:
+- Topics: discuss solutions of algebra1. General recap
+- Duration: 1-2h
+- exercises: fitting1, equation1
+
+## Block 9:
+- Topics: intro to tango, pytango, taurus, sardana
 - Duration: 1-2h
 
-## Block 1:
-- Objective: 
+## Block 10:
+- Topics: taurus newgui demo
 - Duration: 1-2h
 
-## Block 1:
-- Objective: 
-- Duration: 1-2h
-
-## Block 1:
-- Objective: 
-- Duration: 1-2h
-
-## Block 1:
-- Objective: 
-- Duration: 1-2h
