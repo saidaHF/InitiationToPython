@@ -1,36 +1,33 @@
 #!/usr/bin/env python
 
-
-# Solutions to scipy course
-# By carlos.pascual@cells.es
-
+# solution by cpascual@cells.es
 
 """
-Exercise 3 (numpy for matrix operations)
-----------------------------------------
+Exercise: algebra1
+-------------------
 
-1. In ipython, explore the documentation of scipy: scipy?
+Use numpy arrays for performing algebraic manipulations of matrices and vectors
 
-2. create the following 3x3 square matrix:
+1. create the following 3x3 square matrix:
 
         M = np.array([[1,2,0],
                       [0,2,0],
                       [0,0,3]])
 
-3. Find the sum of all the columns and of all the rows.
+2. Print the sum of all the columns and of all the rows.
 
-4. Find the transpose of M. Compare the first column of M with the first row of
-its transpose (check if they are the same with the "==" operator). 
+3. Print the transpose of M. Compare the first column of M with the first row
+of its transpose (check if they are the same with the "==" operator).
 Make an "if" block that prints "Maths work" if the comparison is true.
 
-5. create a copy of M called M2. Change the element in the first row and
+4. create a copy of M called M2. Change the element in the first row and
 second column (which is a 2) by its square root. Make sure that M did not 
-change. Then get the elements of the diagonal of M2
+change. Then print the elements of the diagonal of M2
 
-6. invert M and then check that M multiplied by its inverse gives an Identity 
+5. invert M and then check that M multiplied by its inverse gives an Identity
 matrix (note: round off to 3 decimal points)
 
-7. Find the eigenvectors and eigenvalues of M. Then check that, for a given 
+6. Find the eigenvectors and eigenvalues of M. Then check that, for a given
 eigenvalue (w) and its associated eigenvector (v), the following 
 is true: M v = w v
 
@@ -44,24 +41,24 @@ Tips:
 - For summing, see the .sum() method. Pay attention to the 'axis' parameter.
 
 - For comparisons: comparing two arrays implies element-by-element comparison.
-  See the methods .any() and .all()
+  See the methods .any(), .all() and np.allclose()
 
 - See numpy.linalg submodule for inversion and eigenvectors
 
 - To round-off any numpy data type, you can use the .round() method
-- [Official Solution](exercises/exercise03.py)
+- [Official Solution](exercises/algebra1.py)
 
 """
 
 
 import numpy as np
 
-# step 2
+# step 1
 M = np.array([[1, 2, 0], [0, 2, 0], [0, 0, 3]])
 
 print("M=\n", M)
 
-# step 3
+# step 2
 # I will demonstrate two alternative ways of doing it:
 
 # a) calculate the sum of rows using the using the axis parameter
@@ -69,11 +66,11 @@ sumcols = M.sum(axis=1)  # 1 means summing over the second index (first is 0))!
 print("Sum of rows:", sumcols)
 
 # b)  calculate the sum of columns using slicing and then summing (slower)
-nrows, ncols = M.shape
+_, ncols = M.shape
 for i in range(ncols):
     print("the sum of column %i is %i" % (i, M[:, i].sum()))
 
-# step 4
+# step 3
 MT = M.transpose()
 print("1st col of M : ", M[:, 0])
 print("1st row of MT: ", MT[0, :])
@@ -81,19 +78,19 @@ print("element-wise comparison: ", M[:, 0] == MT[0, :])
 if (M[:, 0] == MT[0, :]).all():
     print("Maths work")
 
-# step 5
-M2 = M.astype("float")
+# step 4
+M2 = M.astype("float")  # cast it to float to allow it to contain float values
 M2[0, 1] = np.sqrt(M2[0, 1])
 print("M: \n", M)
 print("M2: \n", M2)
 print("Diagonal:", M2.diagonal())
 
-# step 6
+# step 5
 Minv = np.linalg.inv(M)
 print("Minv:\n", Minv)
 print("Minv x M:\n", np.dot(Minv, M).round(3))
 
-# step7
+# step6
 print("Eigenvalues (w) and eigenvectors (v):")
 w, v = np.linalg.eig(M)
 for i in range(len(w)):
@@ -101,13 +98,10 @@ for i in range(len(w)):
     eigvec = v[:, i]
     print("w=", eigval, "v=", eigvec)
     print("M v = w v? :", np.dot(M, eigvec), eigval * eigvec, "?")
-    # compare the two solutions allowing for rounding errors:
-    tolerance = 1e-5
-    diff = np.dot(M, eigvec) - eigval * eigvec
-    if abs(diff).max() < tolerance:
+    # compare the two solutions allowing for finite-precision errors:
+    if np.allclose(np.dot(M, eigvec), eigval * eigvec):
         print("yes!")
     else:
         print("no")
     print("----")
 
-# input("press enter to exit")

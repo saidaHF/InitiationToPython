@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
 """
-Exercise 1 (numpy IO)
-----------------------
+Exercise converter4
+--------------------
 
-Do the same as you did in *Part 1* of Exercise 0 but using the numpy module.
+Do the same as you did in exercise **converter1** but using the numpy module.
 Work with the data in the form of numpy.arrays
 
 Tips:
@@ -15,18 +15,18 @@ Tips:
 - Use numpy.loadtxt() for reading and and numpy.savetxt() for writing
 - You will find the following functions and methods very useful: numpy.max(),
   numpy.arange() numpy.zeros() and numpy.array.flatten()
-- Remember that arithmetical operations on numpy arrays are element-wise!
-- [Official Solution](exercises/exercise01.py)
+- Remember that arithmetical operations on numpy arrays are element-wise
+  (you do not need any explicit loop in this exercise!)
+- [Official Solution](exercises/converter4.py)
 """
 
 import numpy
 
-input_file_name = "sp8c.dat"
-output_file_name = "sp2c.dat"
+input_file_name = "../sp8c.dat"
+output_file_name = "converted4.dat"
 
 
-# I am assuming I know the values of the header. See exercise 00 Part 2
-# for a implementation where the header is read.
+# I am assuming I know the values of the header (as in ex. converter1).
 hdr_lines = 3
 gain = 50.0
 offset = 1000.0

@@ -1,15 +1,14 @@
 #!/usr/bin/env python
 
-
-# Solutions to scipy course
-# By carlos.pascual@cells.es
+# solution by cpascual@cells.es
 
 """
 Exercise 5 (scipy for solving equations without analytic solution)
 ------------------------------------------------------------------
 
 Find value of x that satisfies the following (transcendental) equation:
-x = sin(x)
+
+    x = sin(x)
 
 Tips:
 
@@ -25,30 +24,8 @@ Tips:
 
 - If the newton method does not converge, try playing with the tolerance and/or
   the maximum number of iterations
-- [Official Solution](exercises/exercise05.py)
+
+- [Official Solution](exercises/equation1.py)
 """
 
-
-import numpy as np
-from scipy.optimize import newton
-
-
-def f(x):
-    return x - np.sin(x)
-
-
-# let's assume we don't know the derivative of f(x)...
-# Then I need to increase the maxiter to avoid a non-convergence exception
-guess = 1
-x = newton(f, guess, maxiter=1000)
-print("x= %.5f" % x)
-
-
-# we can help by giving the derivative if we know it
-# Note: in this case it is not necessary to increase maxiter
-def df(x):
-    return 1 - np.cos(x)
-
-
-x = newton(f, guess, fprime=df)
-print("x= %.5f" % x)
+# Write your solution here

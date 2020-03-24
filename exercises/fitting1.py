@@ -1,14 +1,12 @@
 #!/usr/bin/env python
 
-
-# Solutions to scipy course
-# By carlos.pascual@cells.es
+# solution by cpascual@cells.es
 
 """
-Exercise 4 (noise filtering and fitting)
-----------------------------------------
+Exercise fitting1
+-----------------
 
-1. Generate 3 vectors (1D arrays) called data_x, data0 and data_y  of 100
+1. Generate 3 vectors (1D arrays) called data_x, data_y0 and data_y  of 100
    elements each containing:
    * `data_x` <-- numbers from -5 to +5 in 0.1 increments
    * `data_y0` <-- 3x^2 + 5x - 10
@@ -40,34 +38,10 @@ Tips:
   more powerful optimisers. If you are interested, check them as well.
 
 - Have a look at:
-
   - http://glowingpython.blogspot.com.es/2011/07/polynomial-curve-fitting.html
-
   - http://matplotlib.sourceforge.net/users/pyplot_tutorial.html
-- [Official Solution](exercises/exercise04.py)
+
+- [Official Solution](exercises/fitting1.py)
 """
 
-
-import numpy as np
-import matplotlib.pyplot as plt
-from scipy.signal import medfilt
-
-# generate data
-data_x = np.arange(-5, 5, 0.1)
-data_y0 = 3 * data_x ** 2 + 5 * data_x - 10
-data_y = np.random.normal(loc=data_y0, scale=10.0)
-
-# filter
-smooth_y = medfilt(data_y, 7)
-
-# polynomial fit
-[a, b, c] = np.polyfit(data_x, data_y, 2)
-print("FIT to f(x)=a*x**2+b*x+c : a=%.3g\tb=%.3g\tc=%.3g" % (a, b, c))
-fitted_y = a * data_x ** 2 + b * data_x + c
-
-# plotting everything
-plt.plot(data_x, data_y0, "b-")
-plt.plot(data_x, data_y, "r.")
-plt.plot(data_x, smooth_y, "b--")
-plt.plot(data_x, fitted_y, "g-")
-plt.show()
+# Write your solution here
