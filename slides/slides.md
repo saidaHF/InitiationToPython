@@ -223,6 +223,7 @@ def foo(x, n=2):
     - `if __name__ == "__main__":...`
     - relative imports (`import .bar`)
 
+---
 
 # numpy, scipy, plotting
 
