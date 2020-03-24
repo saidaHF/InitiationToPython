@@ -1,5 +1,5 @@
 """
-Warm-up exercises
+Exercise warmup1
 -----------------
 
 Simple exercises to get used to python basics.
