@@ -1,10 +1,17 @@
+#!/usr/bin/env python
+
+# solution by cpascual@cells.es
 
 """
-Exercise 5 (scipy for data reduction)
---------------------------------------
+Exercise equation1
+------------------
 
-Find value of x that satisfies the following (transcendental) equation:
-x = sin(x)
+Use scipy for solving equations numerically (works also for equations without
+analytical solution)
+
+Find value of x that satisfies the following trascendental equation:
+
+    x = sin(x)
 
 Tips:
 
@@ -20,7 +27,8 @@ Tips:
 
 - If the newton method does not converge, try playing with the tolerance and/or
   the maximum number of iterations
-- [Official Solution](exercises/cheat/exercise05.py)
+
+- [Official Solution](exercises/equation1.py)
 """
 
 # Write your solution here

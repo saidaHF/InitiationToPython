@@ -1,15 +1,17 @@
 #!/usr/bin/env python
 
-
-# Solutions to scipy course
-# By carlos.pascual@cells.es
+# solution by cpascual@cells.es
 
 """
-Exercise 5 (scipy for data reduction)
---------------------------------------
+Exercise equation1
+------------------
 
-Find value of x that satisfies the following (transcendental) equation:
-x = sin(x)
+Use scipy for solving equations numerically (works also for equations without
+analytical solution)
+
+Find value of x that satisfies the following trascendental equation:
+
+    x = sin(x)
 
 Tips:
 
@@ -25,16 +27,17 @@ Tips:
 
 - If the newton method does not converge, try playing with the tolerance and/or
   the maximum number of iterations
-- [Official Solution](exercises/exercise05.py)
+
+- [Official Solution](exercises/equation1.py)
 """
 
 
-import scipy as S
+import numpy as np
 from scipy.optimize import newton
 
 
 def f(x):
-    return x - S.sin(x)
+    return x - np.sin(x)
 
 
 # let's assume we don't know the derivative of f(x)...
@@ -47,7 +50,7 @@ print("x= %.5f" % x)
 # we can help by giving the derivative if we know it
 # Note: in this case it is not necessary to increase maxiter
 def df(x):
-    return 1 - S.cos(x)
+    return 1 - np.cos(x)
 
 
 x = newton(f, guess, fprime=df)
