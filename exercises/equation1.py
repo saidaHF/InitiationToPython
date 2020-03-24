@@ -3,10 +3,13 @@
 # solution by cpascual@cells.es
 
 """
-Exercise 5 (scipy for solving equations without analytic solution)
-------------------------------------------------------------------
+Exercise equation1
+------------------
 
-Find value of x that satisfies the following (transcendental) equation:
+Use scipy for solving equations numerically (works also for equations without
+analytical solution)
+
+Find value of x that satisfies the following trascendental equation:
 
     x = sin(x)
 
