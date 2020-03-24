@@ -6,16 +6,16 @@
 
 
 """
-Exercise 3 (scipy for matrix operations)
+Exercise 3 (numpy for matrix operations)
 ----------------------------------------
 
 1. In ipython, explore the documentation of scipy: scipy?
 
 2. create the following 3x3 square matrix:
 
-        M = S.array([[1,2,0],
-                    [0,2,0],
-                    [0,0,3]])
+        M = np.array([[1,2,0],
+                      [0,2,0],
+                      [0,0,3]])
 
 3. Find the sum of all the columns and of all the rows.
 
@@ -39,26 +39,25 @@ Tips:
 
 
 - Important: for this exercise, it is more convenient to use the methods of
-  the arrays. i,e, it is better to use M.transpose() than scipy.transpose(M).
+  the arrays. i,e, it is better to use M.transpose() than numpy.transpose(M).
 
 - For summing, see the .sum() method. Pay attention to the 'axis' parameter.
 
 - For comparisons: comparing two arrays implies element-by-element comparison.
   See the methods .any() and .all()
 
-- See scipy.linalg for inversion and eigenvectors
+- See numpy.linalg submodule for inversion and eigenvectors
 
-- To round-off any scipy data type, you can use the .round() method
+- To round-off any numpy data type, you can use the .round() method
 - [Official Solution](exercises/exercise03.py)
 
 """
 
 
-import scipy as S
-from scipy.linalg import inv, eig
+import numpy as np
 
 # step 2
-M = S.array([[1, 2, 0], [0, 2, 0], [0, 0, 3]])
+M = np.array([[1, 2, 0], [0, 2, 0], [0, 0, 3]])
 
 print("M=\n", M)
 
@@ -76,39 +75,39 @@ for i in range(ncols):
 
 # step 4
 MT = M.transpose()
-print("1st row of M : ", M[:, 0])
-print("1st col of MT: ", MT[0, :])
+print("1st col of M : ", M[:, 0])
+print("1st row of MT: ", MT[0, :])
 print("element-wise comparison: ", M[:, 0] == MT[0, :])
 if (M[:, 0] == MT[0, :]).all():
     print("Maths work")
 
 # step 5
 M2 = M.astype("float")
-M2[0, 1] = S.sqrt(M2[0, 1])
+M2[0, 1] = np.sqrt(M2[0, 1])
 print("M: \n", M)
-print("M2 \n: ", M2)
+print("M2: \n", M2)
 print("Diagonal:", M2.diagonal())
 
 # step 6
-Minv = inv(M)
+Minv = np.linalg.inv(M)
 print("Minv:\n", Minv)
-print("Minv x M:\n", S.dot(Minv, M).round(3))
+print("Minv x M:\n", np.dot(Minv, M).round(3))
 
 # step7
 print("Eigenvalues (w) and eigenvectors (v):")
-w, v = eig(M)
+w, v = np.linalg.eig(M)
 for i in range(len(w)):
     eigval = w[i]
     eigvec = v[:, i]
     print("w=", eigval, "v=", eigvec)
-    print("M v = w v? :", S.dot(M, eigvec), eigval * eigvec, "?")
+    print("M v = w v? :", np.dot(M, eigvec), eigval * eigvec, "?")
     # compare the two solutions allowing for rounding errors:
     tolerance = 1e-5
-    diff = S.dot(M, eigvec) - eigval * eigvec
+    diff = np.dot(M, eigvec) - eigval * eigvec
     if abs(diff).max() < tolerance:
         print("yes!")
     else:
         print("no")
     print("----")
 
-input("press enter to exit")
+# input("press enter to exit")

@@ -1,15 +1,15 @@
 
 """
-Exercise 3 (scipy for matrix operations)
+Exercise 3 (numpy for matrix operations)
 ----------------------------------------
 
 1. In ipython, explore the documentation of scipy: scipy?
 
 2. create the following 3x3 square matrix:
 
-        M = S.array([[1,2,0],
-                    [0,2,0],
-                    [0,0,3]])
+        M = np.array([[1,2,0],
+                      [0,2,0],
+                      [0,0,3]])
 
 3. Find the sum of all the columns and of all the rows.
 
@@ -33,17 +33,17 @@ Tips:
 
 
 - Important: for this exercise, it is more convenient to use the methods of
-  the arrays. i,e, it is better to use M.transpose() than scipy.transpose(M).
+  the arrays. i,e, it is better to use M.transpose() than numpy.transpose(M).
 
 - For summing, see the .sum() method. Pay attention to the 'axis' parameter.
 
 - For comparisons: comparing two arrays implies element-by-element comparison.
   See the methods .any() and .all()
 
-- See scipy.linalg for inversion and eigenvectors
+- See numpy.linalg submodule for inversion and eigenvectors
 
-- To round-off any scipy data type, you can use the .round() method
-- [Official Solution](exercises/cheat/exercise03.py)
+- To round-off any numpy data type, you can use the .round() method
+- [Official Solution](exercises/exercise03.py)
 
 """
 
