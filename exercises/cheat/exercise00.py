@@ -22,7 +22,7 @@ The header contains the information needed to reconstruct the time scale
 The exercise is done in two parts:
 
 1. Assume that you know beforehand that the header has 3 lines and that the
-gain is 50.0 and the offset is 1000 ((i.e., you can skip reading the header).
+gain is 50.0 and the offset is 1000 (i.e., you can skip reading the header).
 Write a python script that writes converted data to a file called "sp2c.dat"
 in 2 columns where:
   - There is no header
