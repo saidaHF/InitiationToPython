@@ -40,6 +40,7 @@ Tips:
 
 """
 
+
 def split_file(name):
     """
     Accepts the name of a positron anihilation file and returns a tuple
@@ -48,7 +49,7 @@ def split_file(name):
     f = open(name, "r")
     text = f.read()  # the whole file is read as text
     f.close()
-    header_text, data_text = text.split('DATA')
+    header_text, data_text = text.split("DATA")
     data_words = data_text.split()
     channels = [int(w) for w in data_words]
     return header_text, channels

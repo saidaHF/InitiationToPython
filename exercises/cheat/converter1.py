@@ -68,4 +68,3 @@ f = open(output_file_name, "w")
 for i in range(len(data)):  # note: think how to do this for-loop using zip()
     f.write("%f\t%f\n" % (time[i], normalised[i]))
 f.close()
-

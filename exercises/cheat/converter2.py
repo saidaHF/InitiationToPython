@@ -57,4 +57,3 @@ f = open(output_file_name, "w")
 for i, d in enumerate(data):
     f.write("{x:f}\t{y:f}\n".format(x=i * gain + offset, y=d / max_data))
 f.close()
-
