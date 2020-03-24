@@ -74,6 +74,18 @@ The interactive examples in this course will be run with python 3.7
 
 ---
 
+# File I/O
+
+- [ascii IO](https://docs.python.org/3.7/tutorial/inputoutput.html#reading-and-writing-files)
+    - `f = open(...)` + `f.close()`
+    - `f.read()`
+    - `f.readlines()`
+    - `f.write()`
+    - `f.flush()`
+    - `with open(...) as f`
+
+---
+
 # Flow control
 
 - while
@@ -141,11 +153,15 @@ countries = ["France", "India", "USA"]
 for city, country in zip(cities, countries):
     print(city, country)
 ```
-```console
+```
 Paris France
 Delhi India
 Boston USA
 ```
+
+---
+
+# Flow control (some tricks)
 
 ### enumerating
 ```python
@@ -154,11 +170,15 @@ cities = ["Paris", "Delhi", "Boston"]
 for i, city in enumerate(cities):
     print(i, city)
 ```
-```console
+```
 0 Paris
 1 Delhi
 2 Boston
 ```
+
+---
+
+# Flow control (some tricks)
 
 ### reversing
 ```python
@@ -167,7 +187,7 @@ cities = ["Paris", "Delhi", "Boston"]
 for city in cities[::-1]:
     print(city)
 ```
-```console
+```
 Boston
 Delhi
 Paris
@@ -203,20 +223,6 @@ def foo(x, n=2):
     - `if __name__ == "__main__":...`
     - relative imports (`import .bar`)
 
-
----
-
-# File I/O
-
-- [ascii IO](https://docs.python.org/3.7/tutorial/inputoutput.html#reading-and-writing-files)
-    - `f = open(...)` + `f.close()`
-    - `f.read()`
-    - `f.readlines()`
-    - `f.write()`
-    - `f.flush()`
-    - `with open(...) as f`
-
----
 
 # numpy, scipy, plotting
 
