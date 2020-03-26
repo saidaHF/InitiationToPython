@@ -66,7 +66,7 @@ The interactive examples in this course will be run with python 3.7
 - For a "matlab-like" IDE, use [jupyter lab](https://jupyter.org/) or[spyder](https://www.spyder-ide.org/)
 
 - For "serious" development, we recommend [PyCharm **Community Edition**](https://www.jetbrains.com/pycharm/download)
-  - ... or emacs, if you want to be a [real programmer](https://www.xkcd.com/378/)
+- ... or [emacs](https://www.gnu.org/software/emacs/), if you are a [real programmer](https://www.xkcd.com/378/)
 
 - When programmin it is **always** good to use a Version Control System (see, e.g. [this git tutorial](https://backlog.com/git-tutorial/))
 
@@ -98,7 +98,7 @@ The interactive examples in this course will be run with python 3.7
 
 # Python types II
 
-### Types:
+#### Types:
 - [Lists](https://docs.python.org/3.7/tutorial/introduction.html#lists) and [More on lists](https://docs.python.org/3.7/tutorial/datastructures.html#more-on-lists)
 
 - [Tuples](https://docs.python.org/3.7/tutorial/datastructures.html#tuples-and-sequences)
@@ -111,7 +111,7 @@ The interactive examples in this course will be run with python 3.7
 
 - (Mention numpy arrays )
 
-### concepts:
+#### concepts:
 - (un)packing: `a, b, c = [1, 2, 3]`
 - List comprehensions:  `["foo%i" % i for i in range(3)]`
 - mutability: (numbers, booleans, None and tuples are inmutable)
@@ -121,12 +121,24 @@ The interactive examples in this course will be run with python 3.7
 # File I/O
 
 - [ascii IO](https://docs.python.org/3.7/tutorial/inputoutput.html#reading-and-writing-files)
+
     - `f = open(...)` + `f.close()`
+
     - `f.read()`
+
     - `f.readlines()`
+
     - `f.write()`
+
     - `f.flush()`
+
     - `with open(...) as f`
+
+```python
+with open("foo", "rb") as f1:
+    with open("bar", "wb") as f2:
+        f2.write(f1.read())
+```
 
 ---
 
