@@ -1,6 +1,6 @@
-# Python intro course
+# ALBA's Python intro course
 
-The following is just an check-list of topics to cover, with references to other tutorials
+This is a "guideline" for the course. The details are covered in the linked resources
 
 These slides are available online in:
 
