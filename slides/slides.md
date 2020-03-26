@@ -99,7 +99,6 @@ The interactive examples in this course will be run with python 3.7
 # Python types II
 
 ### Types:
-
 - [Lists](https://docs.python.org/3.7/tutorial/introduction.html#lists) and [More on lists](https://docs.python.org/3.7/tutorial/datastructures.html#more-on-lists)
 
 - [Tuples](https://docs.python.org/3.7/tutorial/datastructures.html#tuples-and-sequences)
@@ -113,7 +112,6 @@ The interactive examples in this course will be run with python 3.7
 - (Mention numpy arrays )
 
 ### concepts:
-
 - (un)packing: `a, b, c = [1, 2, 3]`
 
 - List comprehensions:  `["foo%i" % i for i in range(3)]`
