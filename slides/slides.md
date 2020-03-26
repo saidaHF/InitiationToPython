@@ -286,12 +286,14 @@ def foo(x, n=2):
 
     - `import foo as oof`
 
-- [Interesting modules](https://docs.python.org/3.7/tutorial/stdlib.html): os, sys, datetime, glob, re,... 
+
+- [Interesting modules](https://docs.python.org/3.7/tutorial/stdlib.html): os, sys, datetime, glob, re, collections, ... 
 
 - custom modules
     - `if __name__ == "__main__":...`
 
-    - relative imports (`import .bar`)
+- relative imports
+    - `from .foo import bar`
 
 ---
 
@@ -371,16 +373,19 @@ References:
 ## PyTango vs Taurus vs Taurus Core vs Sardana
 - PyTango:
     - http://pytango.readthedocs.io
+
 - Taurus.core: 
-    - http://taurus-scada.org/devel/core_tutorial.htmll
+    - http://taurus-scada.org/devel/core_tutorial.html
+
 - Taurus (For widgets)
     - http://www.taurus-scada.org/users/introduction.html
+
 - Sardana (The whole control system)
     - http://www.sardana-controls.org
 
 ---
  
-## PyTango
+## PyTango (for clients)
 
 https://pytango.readthedocs.io/en/stable/quicktour.html
 
@@ -401,7 +406,7 @@ https://pytango.readthedocs.io/en/stable/quicktour.html
 
 - Taurus.core: 
     - http://www.taurus-scada.org/devel/core_tutorial.html
-    - 
+    
     ```python
     >>> import taurus
     >>> dev = taurus.Device("sys/tg_test/1") 
