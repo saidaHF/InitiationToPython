@@ -242,11 +242,16 @@ Paris
 
 # functions
 
-- [defining functions](https://docs.python.org/3.7/tutorial/controlflow.html#defining-functions):
+- [defining functions](https://docs.python.org/3.7/tutorial/controlflow.html#defining-functions)
+
     - `def f1(): print("hello")`
+
     - `def f2(): return 5`
+
     - passing arguments
+
     - keyword arguments
+
     - multiple return values (unpacking )
 
 ```python
@@ -258,14 +263,22 @@ def foo(x, n=2):
 
 # modules 
 - [modules](https://docs.python.org/3.7/tutorial/modules.html#more-on-modules) and [packages](https://docs.python.org/3.7/tutorial/modules.html#packages)
+
 - Importing:
+
     - `import foo`
+
     - `import foo.bar`
+
     - `from foo import bar`
+
     - `import foo as oof`
+
 - [Interesting modules](https://docs.python.org/3.7/tutorial/stdlib.html): os, sys, datetime, glob, re,... 
+
 - custom modules
     - `if __name__ == "__main__":...`
+
     - relative imports (`import .bar`)
 
 ---
@@ -273,35 +286,57 @@ def foo(x, n=2):
 # numpy, scipy, plotting
 
 References:
+
 - Numpy tutorial NP:
     - https://docs.scipy.org/doc/numpy/user/quickstart.html
+
 - Matplotlib tutorial :MPL
     - http://matplotlib.org/users/pyplot_tutorial.html
+
 - Matlab to Python conversion:
     - https://docs.scipy.org/doc/numpy/user/numpy-for-matlab-users.html
+
 - scipy recipes:
     - http://scipy-cookbook.readthedocs.io/
 
 ---
 
-# numpy
-### https://docs.scipy.org/doc/numpy/user/quickstart.html
+# numpy (I)
+
+#### https://docs.scipy.org/doc/numpy/user/quickstart.html
+
 - numpy VS scipy VS pylab VS matplotlib
+
 - Concept of arrays. Differences with lists and tuples
+
 - dtype, shape, ndim 
+
 - Array creation 
     - `array()`
     - `ones`, `zeros`, `arange`, `linspace`, `rand`
+
+- `loadtxt`, `savetxt`
+
+---
+
+# numpy (II)
+
 - operations 
     - arithmetic: `a + b`, `a * b`, `dot(a, b)`
+
     - `sum`, `max`, `argmax`, ...
+
     - `reshape`, `transpose`
+
     - `hstack`, `vstack`, `column_stack`
+
 - slicing:
     - Using slice notation:  `a[3:50:2,1:6,-2]`
+
     - Using array of booleans:  `a[a>2]`
+
     - Using list of indices:  `a[[1, 2, 3, 5, 7, 11]]`
-- `loadtxt`, `savetxt`
+
 
 ---
 
