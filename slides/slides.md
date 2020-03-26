@@ -15,12 +15,19 @@ https://gitlab.com/alba-synchrotron/controls-section/pythoncourse-intro/
 # Getting started
 
 - Why python: 
+
     - scripted 
+
     - dynamic types
+
     - multi-platform 
+
     - many libraries
+
     - multi-purpose (science, automation, web, GUIs, ...)
+
     - free
+
     - easy!
 
 ---
@@ -33,44 +40,85 @@ alternatively also install the packages from the official repositories
 
 ## Which version of python (2.x vs 3.x)?: 
 
-- As a general rule, (at the time of writing, December 2020)
+- As a general rule, (at the time of writing, March 2020)
   we recommend using at least 3.7
-- ... or 3.5 if you need to run code on a debian stretch (e.g. in ALBA debian machines)
+
+- ... or 3.5 if you need to run code on a debian stretch (e.g. in ALBA debian9 machines)
+
 - ... or 2.7 only if you need to run code in very old machines (e.g. old SuSe machines at ALBA)
 
 The interactive examples in this course will be run with python 3.7
 
 ---
 
-# Interactive mode vs scripts
+# First steps
+
+### Interactive mode vs scripts
 
 - `ipython` (vs `python`)
+
 - `python hello.py`
+
 - Space matters!!! (set tabs=4 spaces in your editor)
-- For a "matlab-like" IDE, use [spyder](https://www.spyder-ide.org/) or [jupyter lab](https://jupyter.org/)
+
+### Tools
+
+- For a "matlab-like" IDE, use [jupyter lab](https://jupyter.org/) or[spyder](https://www.spyder-ide.org/)
+
 - For "serious" development, we recommend [PyCharm **Community Edition**](https://www.jetbrains.com/pycharm/download)
+  - ... or emacs, if you want to be a [real programmer](https://www.xkcd.com/378/)
+
+- When programmin it is **always** good to use a Version Control System (see, e.g. [this git tutorial](https://backlog.com/git-tutorial/))
 
 ---
 
-# Python types
+# Python types I
 
-- Types:
-    - [Numbers](https://docs.python.org/3.7/tutorial/introduction.html#numbers) 
-    - [Strings](https://docs.python.org/3.7/tutorial/introduction.html#strings)
-    - `None` 
-    - [Lists](https://docs.python.org/3.7/tutorial/introduction.html#lists) and [More on lists](https://docs.python.org/3.7/tutorial/datastructures.html#more-on-lists)
-    - [Tuples](https://docs.python.org/3.7/tutorial/datastructures.html#tuples-and-sequences)
-    - [Sets](https://docs.python.org/3.7/tutorial/datastructures.html#sets)
-    - [Dictionaries](https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries)
-    - lazy iterables ([`range` objects](https://docs.python.org/3.7/tutorial/controlflow.html#the-range-function), iterators,...)
-    - (Mention numpy arrays )
+### Types:
+- [Numbers](https://docs.python.org/3.7/tutorial/introduction.html#numbers)
 
-- concepts:
-    - everything is a class: `type()`
-    - operators
-    - slicing
-    - (un)packing: `a, b, c = [1, 2, 3]`
-    - List comprehensions:  `["foo%i" % i for i in range(3)]`
+- [Strings](https://docs.python.org/3.7/tutorial/introduction.html#strings)
+
+- booleans (`True`, `False`)
+
+- `None`  
+   
+
+### concepts:
+
+- everything is a class: `type()`
+
+- operators
+
+- slicing
+
+- [builtins](https://docs.python.org/3.7/library/functions.html)
+
+---
+
+# Python types II
+
+### Types:
+
+- [Lists](https://docs.python.org/3.7/tutorial/introduction.html#lists) and [More on lists](https://docs.python.org/3.7/tutorial/datastructures.html#more-on-lists)
+
+- [Tuples](https://docs.python.org/3.7/tutorial/datastructures.html#tuples-and-sequences)
+
+- [Sets](https://docs.python.org/3.7/tutorial/datastructures.html#sets)
+
+- [Dictionaries](https://docs.python.org/3.7/tutorial/datastructures.html#dictionaries)
+
+- lazy iterables ([`range` objects](https://docs.python.org/3.7/tutorial/controlflow.html#the-range-function), iterators,...)
+
+- (Mention numpy arrays )
+
+### concepts:
+
+- (un)packing: `a, b, c = [1, 2, 3]`
+
+- List comprehensions:  `["foo%i" % i for i in range(3)]`
+
+- mutability: (numbers, booleans, None and tuples are inmutable)
 
 ---
 
