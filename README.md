@@ -56,7 +56,7 @@ days.
 
 - Familiarize yourself with the most basic concepts of python:
 
-  - Read [this intro](http://docs.python.org/2/tutorial/introduction.html)
+  - Read [this intro](http://docs.python.org/3/tutorial/introduction.html)
     *(Expected required time: 30'-60'  , Priority: very high)*
 
   - Follow [this tutorial](http://introtopython.org/var_string_num.html)
