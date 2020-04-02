@@ -63,7 +63,7 @@ The interactive examples in this course will be run with python 3.7
 
 ### Tools
 
-- For a "matlab-like" IDE, use [jupyter lab](https://jupyter.org/) or[spyder](https://www.spyder-ide.org/)
+- For a "matlab-like" IDE, use [jupyter lab](https://jupyter.org/) or [spyder](https://www.spyder-ide.org/)
 
 - For "serious" development, we recommend [PyCharm **Community Edition**](https://www.jetbrains.com/pycharm/download)
 - ... or [emacs](https://www.gnu.org/software/emacs/), if you are a [real programmer](https://www.xkcd.com/378/)
