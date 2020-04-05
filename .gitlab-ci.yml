@@ -1,6 +1,25 @@
-image: alpine:latest
+
+run_exercises:
+  image: python:3.7-buster
+  stage: test
+  script:
+    # run exercises that have changed
+    - cd exercises
+    - CHANGED=`git diff --name-only --relative origin/$CI_MERGE_REQUEST_TARGET_BRANCH_NAME ./*.py`
+    - for f in $CHANGED; do cat $f; python $f|tee $f.out; done
+  artifacts:
+    expose_as: 'output'
+    untracked: true
+    paths: ['exercises/']
+  only:
+    refs:
+      - merge_requests
+    changes:
+      - exercises/*.py
+
 
 pages:
+  image: alpine:latest
   stage: deploy
   script:
   - cp -a slides public
@@ -8,4 +27,7 @@ pages:
     paths:
     - public
   only:
-  - master
+    refs:
+      - master
+    changes:
+      - slides/*
