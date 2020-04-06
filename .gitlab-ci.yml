@@ -7,7 +7,7 @@ run_exercises:
     - cd exercises
     - git branch --list
     - git remote -v
-    - CHANGED=`git diff --name-only --relative origin/$CI_MERGE_REQUEST_TARGET_BRANCH_NAME ./*.py`
+    - CHANGED=`git diff --name-only --relative origin/master ./*.py`
     - for f in $CHANGED; do cat $f; python $f|tee $f.out; done
   artifacts:
     expose_as: 'output'
