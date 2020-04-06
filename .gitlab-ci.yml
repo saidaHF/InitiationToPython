@@ -11,11 +11,11 @@ run_exercises:
     expose_as: 'output'
     untracked: true
     paths: ['exercises/']
-  only:
-    refs:
-      - merge_requests
-    changes:
-      - exercises/*.py
+#  only:
+#    refs:
+#      - merge_requests
+#    changes:
+#      - exercises/*.py
 
 
 pages:
