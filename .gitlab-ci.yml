@@ -1,5 +1,6 @@
+image: python:3.7-buster
+
 run_exercises:
-  image: python:3.7-buster
   stage: test
   before_script:
     - python -m pip install numpy matplotlib scipy
@@ -15,6 +16,19 @@ run_exercises:
     untracked: true
     paths:
       - exercises/
+  only:
+    refs:
+      - merge_requests
+    changes:
+      - exercises/*.py
+
+
+flake8:
+  stage: test
+  before_script:
+    - python -m pip install flake8
+  script:
+  - flake8 exercises/*.py
   only:
     refs:
       - merge_requests
