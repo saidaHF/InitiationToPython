@@ -13,7 +13,8 @@ run_exercises:
   artifacts:
     expose_as: 'output'
     untracked: true
-    paths: ['exercises/']
+    paths:
+      - exercises/
   only:
     refs:
       - merge_requests
