@@ -114,7 +114,7 @@ The interactive examples in this course will be run with python 3.7
 #### concepts:
 - (un)packing: `a, b, c = [1, 2, 3]`
 - List comprehensions:  `["foo%i" % i for i in range(3)]`
-- mutability: (numbers, booleans, None and tuples are inmutable)
+- mutability: (numbers, strings, booleans, None and tuples are immutable)
 
 ---
 
