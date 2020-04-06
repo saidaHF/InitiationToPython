@@ -5,9 +5,11 @@ run_exercises:
   script:
     # run exercises that have changed
     - cd exercises
-    - git branch --list
+    - git remote add official https://gitlab.com/alba-synchrotron/controls-section/pythoncourse-intro.git
+    - git remote update
     - git remote -v
-    - CHANGED=`git diff --name-only --relative origin/master ./*.py`
+    - git branch -a
+    - CHANGED=`git diff --name-only --relative remotes/official/master -- ./*.py`
     - for f in $CHANGED; do cat $f; python $f|tee $f.out; done
   artifacts:
     expose_as: 'output'
