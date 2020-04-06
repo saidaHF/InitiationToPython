@@ -1,4 +1,3 @@
-
 run_exercises:
   image: python:3.7-buster
   stage: test
@@ -10,7 +9,7 @@ run_exercises:
     - git remote add official https://gitlab.com/alba-synchrotron/controls-section/pythoncourse-intro.git
     - git remote update
     - CHANGED=`git diff --name-only --relative remotes/official/master -- ./*.py`
-    - for f in $CHANGED; do cat $f; python $f|tee $f.out; done
+    - for f in $CHANGED; do cat $f; python $f|tee _OUTPUT-$f.txt; done
   artifacts:
     expose_as: 'output'
     untracked: true
