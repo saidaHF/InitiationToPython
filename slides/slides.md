@@ -118,6 +118,31 @@ The interactive examples in this course will be run with python 3.7
 
 ---
 
+# String Formatting
+
+> "Could 2 swallows carry a coconut?"
+
+```python
+number = 2
+cargo = "a coconut"
+```
+
+#### using [printf-style](https://docs.python.org/3.7/library/stdtypes.html#old-string-formatting) 
+```python
+question = "Could %d swallows carry %s?" % (number, cargo)
+```
+
+#### using [.format()](https://docs.python.org/3.7/tutorial/inputoutput.html#the-string-format-method)
+```python
+question = "Could {:d} swallows carry {:s}}?".format(number, cargo)
+```
+
+#### using [f-strings](https://docs.python.org/3.7/tutorial/inputoutput.html#formatted-string-literals) (python >= 3.6)
+```python
+question = f"Could {number} swallows carry {cargo}?"
+```
+---
+
 # File I/O
 
 - [ascii IO](https://docs.python.org/3.7/tutorial/inputoutput.html#reading-and-writing-files)
