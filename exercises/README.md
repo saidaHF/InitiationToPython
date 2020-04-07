@@ -30,10 +30,11 @@ First you need some preparation (only done once):
 
 Then, to submit a given exercise:
 
-1. Make sure that your local copy is up-to-date with the official repository:
-  ```console
-  git pull
-  ```
+1. Make sure that your local copy is up-to-date with the official repository 
+   (run the following from within the `pythoncourse-intro` dir):
+   ```console
+   git pull
+   ```
 
 2. Open the corresponding file in your local copy of the `exercises` folder 
    (e.g. `warmup.py`), and solve the exercise, testing it in your PC.
