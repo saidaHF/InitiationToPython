@@ -47,7 +47,7 @@ offset = float(words[1 + words.index("OFFSET")])
 gain = float(words[1 + words.index("GAIN")])
 
 # assume that data is anything that comes after the keyword DATA
-data = [float(w) for w in words[1 + words.index("DATA"):]]  # note the ':'
+data = [float(w) for w in words[1 + words.index("DATA") :]]  # note the ':'
 
 # find the maximum
 max_data = max(data)  # we do this outside the loop because it won't change
