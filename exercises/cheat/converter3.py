@@ -19,7 +19,7 @@ corresponding float values obtained from the header as in exercise converter2
 
 - Create a function called "write_2columns" that writes the output file as
 in exercise converter2 and which accepts the following arguments:
-  - "data": the channel data as a sequence of integers. this argument is mandatory
+  - "data": the channel data as a sequence of integers. Mandatory argument
   - "gain": the gain. This argument is optional and its default value is 1
   - "offset": the offset. This argument is optional and its default value is 0
   - "norm": the normalization value. This argument is optional and if not
