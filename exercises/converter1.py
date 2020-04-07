@@ -7,7 +7,7 @@ Exercise: converter1
 --------------------
 
 Make sure that you work on the "exercises" directory and that it contains
-the file named [sp8c.dat](exercises/sp8c.dat).
+the file named `sp8c.dat`
 
 The file sp8c.dat contains the data of a positron-decay spectrum (detector
 counts as a function of time) saved in ASCII with the following format:
@@ -17,7 +17,7 @@ counts as a function of time) saved in ASCII with the following format:
 
 `time = ChannelNumber * GAIN + OFFSET`
 
-- the values of the counts for 256 channels, written as 8 channels per row,.
+- the values of the counts for 256 channels, written as 8 channels per row.
 
 For this exercise, assume that you know beforehand that the header has 3 lines
 and that the gain is 50.0 and the offset is 1000 (i.e., you do not need to
