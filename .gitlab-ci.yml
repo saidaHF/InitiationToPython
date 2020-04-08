@@ -3,14 +3,9 @@ image: python:3.7-buster
 run_exercises:
   stage: test
   before_script:
-    - python -m pip install numpy matplotlib scipy
+    - python -m pip install numpy matplotlib scipy pytest
   script:
-    # run exercises that have changed
-    - cd exercises
-    - git remote add official https://gitlab.com/alba-synchrotron/controls-section/pythoncourse-intro.git
-    - git remote update
-    - CHANGED=`git diff --name-only --relative remotes/official/master -- ./*.py`
-    - for f in $CHANGED; do cat $f; python $f|tee _OUTPUT-$f.txt; done
+    - pytest exercises
   artifacts:
     expose_as: 'output'
     untracked: true
