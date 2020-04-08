@@ -43,7 +43,7 @@ Tips:
 
 def split_file(name):
     """
-    Accepts the name of a positron anihilation file and returns a tuple
+    Accepts the name of a positron annihilation file and returns a tuple
     containing the header and the channel values
     """
     f = open(name, "r")
@@ -57,7 +57,7 @@ def split_file(name):
 
 def parse_header(header):
     """
-    accepts the header text and returns a dictionary contaiining "gain" and
+    accepts the header text and returns a dictionary containing "gain" and
     "offset" read from the header
     """
     ret = {}
@@ -69,7 +69,7 @@ def parse_header(header):
 
 def write_2columns(data, gain=1, offset=0, norm=None, name="converted3.dat"):
     """
-    writes a two-column normalized positron anihilation spectrum file.
+    writes a two-column normalized positron annihilation spectrum file.
     It accepts the following arguments:
 
     - "data": the channel data as a sequence of numbers. Mandatory.
