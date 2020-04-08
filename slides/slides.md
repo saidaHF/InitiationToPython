@@ -68,7 +68,8 @@ The interactive examples in this course will be run with python 3.7
 - For "serious" development, we recommend [PyCharm **Community Edition**](https://www.jetbrains.com/pycharm/download)
 - ... or [emacs](https://www.gnu.org/software/emacs/), if you are a [real programmer](https://www.xkcd.com/378/)
 
-- When programmin it is **always** good to use a Version Control System (see, e.g. [this git tutorial](https://backlog.com/git-tutorial/))
+- When programming it is **always** good to use a Version Control System 
+  (see, e.g. [this git tutorial](https://backlog.com/git-tutorial/))
 
 ---
 
@@ -134,7 +135,7 @@ question = "Could %d swallows carry %s?" % (number, cargo)
 
 #### using [.format()](https://docs.python.org/3.7/tutorial/inputoutput.html#the-string-format-method)
 ```python
-question = "Could {:d} swallows carry {:s}}?".format(number, cargo)
+question = "Could {} swallows carry {}?".format(number, cargo)
 ```
 
 #### using [f-strings](https://docs.python.org/3.7/tutorial/inputoutput.html#formatted-string-literals) (python >= 3.6)
@@ -147,19 +148,20 @@ question = f"Could {number} swallows carry {cargo}?"
 
 - [ascii IO](https://docs.python.org/3.7/tutorial/inputoutput.html#reading-and-writing-files)
 
-    - `f = open(...)` + `f.close()`
+    - `f = open(...)` + `f.close()`  (open and close a file object)
 
-    - `f.read()`
+    - `f.read()`  (read file as a single string)
 
-    - `f.readlines()`
+    - `f.readlines()` (read file line by line)
 
-    - `f.write()`
+    - `f.write()` (write strings into a file)
 
-    - `f.flush()`
+    - `f.flush()` (force the OS to write *now*)
 
-    - `with open(...) as f`
+    - `with open(...) as f`  (using a context manager - safer)
 
 ```python
+# copy "foo" file into "bar" file
 with open("foo", "rb") as f1:
     with open("bar", "wb") as f2:
         f2.write(f1.read())
