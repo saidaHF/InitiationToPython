@@ -29,6 +29,7 @@ def run_exercise(name, args=()):
             stderr=stdout,
             cwd=ex_dir,
         )
+        assert p.returncode == 0
 
 
 @pytest.mark.parametrize("number", [1, 2, 3, 4])
