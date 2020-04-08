@@ -148,17 +148,17 @@ question = f"Could {number} swallows carry {cargo}?"
 
 - [ascii IO](https://docs.python.org/3.7/tutorial/inputoutput.html#reading-and-writing-files)
 
-    - `f = open(...)` + `f.close()`  (open and close a file object)
+    - `f = open(...)` + `f.close()`
 
-    - `f.read()`  (read file as a single string)
+    - `f.read()`
 
-    - `f.readlines()` (read file line by line)
+    - `f.readlines()`
 
-    - `f.write()` (write strings into a file)
+    - `f.write()`
 
-    - `f.flush()` (force the OS to write *now*)
+    - `f.flush()`
 
-    - `with open(...) as f`  (using a context manager - safer)
+    - `with open(...) as f`
 
 ```python
 # copy "foo" file into "bar" file
