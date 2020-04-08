@@ -9,6 +9,7 @@ run_exercises:
   artifacts:
     expose_as: 'output'
     untracked: true
+    when: always
     paths:
       - exercises/
   only:
