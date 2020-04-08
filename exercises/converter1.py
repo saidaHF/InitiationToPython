@@ -31,7 +31,7 @@ Write a python script that writes converted data to a file called
     in the input data
 
 Important: do not import modules. Do it using the basic python built-in
-functions (https://docs.python.org/2/library/functions.html ).
+functions (https://docs.python.org/3/library/functions.html ).
 
 Tips:
 
