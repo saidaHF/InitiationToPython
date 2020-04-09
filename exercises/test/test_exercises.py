@@ -44,14 +44,24 @@ def test_converter(number):
     assert np.allclose(got, exp, rtol=1e-3)
 
 
+def test_matplot1():
+    run_exercise("matplot1.py")
+    assert os.path.exists(os.path.join(ex_dir, "mp1.png"))
+    assert os.path.exists(os.path.join(ex_dir, "mp2.png"))
+
+
+def test_fitting1():
+    run_exercise("fitting1.py")
+    assert os.path.exists(os.path.join(ex_dir, "fit.png"))
+
+
 @pytest.mark.parametrize("name",
                          ["warmup1.py",
                           "warmup2.py",
                           "algebra1.py",
-                          "matplot1.py",
                           "equation1.py",
-                          "fitting1.py",
-                          ])
+                          ]
+                         )
 def test_smoke_run(name):
     run_exercise(name)
 

@@ -14,7 +14,7 @@ Exercise fitting1
    distributed gaussian values with standard deviation=10
 
 2. Plot data_y0 and data_y as a function of data_x. Plot data_y0 as a blue line
-   and data_y as red dots .
+   and data_y as red dots.
 
 3. smooth data_y with a median filter using a kernel size of 7.
    Plot the filtered data (with dashed lines) superimposed to data_y
@@ -22,7 +22,9 @@ Exercise fitting1
 
 4. make a polynomial fit of data_y to the function f(x) = a*x**2+b*x+c .
    Obtain the values of a, b and c from the fit and print them. Then use them
-   to plot the fitted curve (in green) superimposed to data_y0 and data_y.
+   to plot the fitted curve (in green) superimposed to data_y0, data_y
+   and the filtered data. Make the script automatically save this
+   plot as "fit.png"
 
 
 Tips:
@@ -67,4 +69,5 @@ plt.plot(data_x, data_y0, "b-")
 plt.plot(data_x, data_y, "r.")
 plt.plot(data_x, smooth_y, "b--")
 plt.plot(data_x, fitted_y, "g-")
+plt.savefig("fit.png")
 plt.show()
