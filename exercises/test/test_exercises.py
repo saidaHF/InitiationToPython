@@ -41,7 +41,7 @@ def test_converter(number):
     import numpy as np
     got = np.loadtxt(os.path.join(ex_dir, oname), dtype='float')
     exp = np.loadtxt(os.path.join(cheat_dir, oname), dtype='float')
-    assert np.allclose(got, exp, rtol=1e-3)
+    np.testing.assert_allclose(got, exp, rtol=1e-3)
 
 
 def test_matplot1():
