@@ -48,12 +48,9 @@ def split_file(name):
     Accepts the name of a positron annihilation file and returns a tuple
     containing the header and the channel values
     """
-    f = open(name, "r")
-    text = f.read()  # the whole file is read as text
-    f.close()
-    header_text, data_text = text.split("DATA")
-    data_words = data_text.split()
-    channels = [int(w) for w in data_words]
+    with open(name) as f:
+        header_text, data_text = f.read().split("DATA")
+    channels = [int(w) for w in data_text.split()]
     return header_text, channels
 
 
@@ -81,7 +78,7 @@ def write_2columns(data, gain=1, offset=0, norm=None, name="converted3.dat"):
     - "name": the name of the output file (default "converted3.dat")
     """
     if norm is None:
-        norm = max(data)
+        norm = max(data) or 1
     f = open(name, "w")
     for i, d in enumerate(data):
         f.write("{x:f}\t{y:f}\n".format(x=i * gain + offset, y=d / norm))
