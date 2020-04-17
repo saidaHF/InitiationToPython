@@ -23,7 +23,9 @@ in exercise converter2 and which accepts the following arguments:
   - "gain": the gain. This argument is optional and its default value is 1
   - "offset": the offset. This argument is optional and its default value is 0
   - "norm": the normalization value. This argument is optional and if not
-     given, it will be calculated as the max of data
+     given, it will be calculated as the max of data. Bonus Points if the
+     calculation of the normalization works even if norm is not passed and
+     all channels are 0.
   - "name": the name of the output file. This argument is optional and its
     default value is "converted3.dat"
 
