@@ -187,13 +187,13 @@ with open("foo", "rb") as f1:
 - [try-except](https://docs.python.org/3.7/tutorial/errors.html#exceptions) and [using them for flow control](https://docs.python.org/3.7/tutorial/errors.html#handling-exceptions)
   ```python
   for n in range(-5, 5):
-    if n == 3:
-        continue
-    try:
-        a = 1 / n
-        print(n, a)
-    except ZeroDivisionError:
-        print(n, "---")
+      if n == 3:
+          continue
+      try:
+          a = 1 / n
+          print(n, a)
+      except ZeroDivisionError:
+          print(n, "---")
   ```
 
 ---
