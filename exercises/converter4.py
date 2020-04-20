@@ -17,6 +17,8 @@ Tips:
   numpy.arange() numpy.zeros() and numpy.array.flatten()
 - Remember that arithmetical operations on numpy arrays are element-wise
   (you do not need any explicit loop in this exercise!)
+- Check that the output file is the expected one (more specifically: check that
+  it is 2 columns, not 2 rows)
 - [Official Solution](exercises/converter4.py)
 """
 
