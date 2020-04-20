@@ -335,7 +335,7 @@ References:
     - http://matplotlib.org/users/pyplot_tutorial.html
 
 - Matlab to Python conversion:
-    - https://docs.scipy.org/doc/numpy/user/numpy-for-matlab-users.html
+    - https://numpy.org/doc/stable/user/numpy-for-matlab-users.html
 
 - scipy recipes:
     - http://scipy-cookbook.readthedocs.io/
