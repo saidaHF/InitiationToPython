@@ -329,7 +329,7 @@ def foo(x, n=2):
 References:
 
 - Numpy tutorial NP:
-    - https://docs.scipy.org/doc/numpy/user/quickstart.html
+    - https://numpy.org/doc/stable/user/quickstart.html
 
 - Matplotlib tutorial :MPL
     - http://matplotlib.org/users/pyplot_tutorial.html
@@ -344,7 +344,7 @@ References:
 
 # numpy (I)
 
-#### https://docs.scipy.org/doc/numpy/user/quickstart.html
+#### https://numpy.org/doc/stable/user/quickstart.html
 
 - numpy VS scipy VS pylab VS matplotlib
 
