@@ -125,7 +125,13 @@ def test_converter3_write(data, kw, t, y, tmp_path):
 
 
 def test_matplot1():
-    run_exercise("matplot1.py")
+    try:
+        from shutil import copyfile
+        copyfile(os.path.join(cheat_dir, 'converted1.dat'),
+                 os.path.join(ex_dir, 'converted1.dat'))
+        run_exercise("matplot1.py")
+    finally:
+        os.remove(os.path.join(ex_dir, 'converted1.dat'))
     assert os.path.exists(os.path.join(ex_dir, "mp1.png"))
     assert os.path.exists(os.path.join(ex_dir, "mp2.png"))
 
