@@ -41,12 +41,12 @@ to adapt to the actual progress of the course or to the unfolding of the events.
 ## Block 6:
 - When: 2020-04-20, 11:00-13:00
 - Topics: discuss solutions of converter3; importing modules; numpy intro
-- exercises: converter4, matplot1
+- exercises: converter4
 
 ## Block 7:
 - When: 2020-04-22, 11:00-13:00
 - Topics: discuss solutions of converter4; More on numpy
-- exercises: algebra1
+- exercises: matplot1, algebra1
 
 ## Block 8:
 - When: 2020-04-24, 11:00-13:00
