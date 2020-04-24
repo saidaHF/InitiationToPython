@@ -78,4 +78,47 @@ Note: I recommend installing the **"Community" Edition** (not the "Professional"
   - Interpreter -> **Existing** interpreter -> `...` -> Conda environment -> 
   and choose the python executable that you found out before for the "py3qt5" conda environment.
 - Check that `Settings-> editor-> inspections-> code compatibility inspections` is set to 3.5, 3.6, 3.7 and 3.8
+ 
 
+## (Optional) Create a local tango system using docker
+
+This is optional. It is only needed if you want to run a complete self-contained tango system locally in your computer.
+
+This requires the installation of docker and downloading ~2Gb of data.
+
+It is not needed if you have access to an already-running Tango system (such as those in ALBA's control room or a beamline).
+
+- Install docker (including docker-compose). See the instructions for your OS [here](https://docs.docker.com/get-docker/). 
+    - Note that for older versions of Windows or Mac where "Docker Desktop" cannot be installed, you may install [Docker-toolbox](https://docs.docker.com/toolbox/)
+    - For GNU/Linux users make sure to also install [Docker-compose](https://docs.docker.com/compose/install/)
+- Check that docker runs by issueing the following commands (for details, see [this](https://docs.docker.com/get-started/)):
+    - `docker --version`
+    - `docker run hello-world`
+- Download the tango docker images (from the root of the course directory):
+  ```
+  cd pythoncourse-intro  # make sure that you are at the course dir
+  docker-compose pull
+  ```
+  
+- To start the tango system, you can do (from the root of the course dir):
+  ```
+  docker-compose up -d
+  ``` 
+  
+- To check the tango system, you can do (from the root of the course dir):
+  ```
+  docker ps
+  ```
+  you should see something like:
+  ```
+               Name                            Command               State            Ports          
+  ---------------------------------------------------------------------------------------------------
+  pythoncourse-intro_tango-cs_1     /bin/sh -c /usr/local/bin/ ...   Up      0.0.0.0:10000->10000/tcp
+  pythoncourse-intro_tango-db_1     docker-entrypoint.sh mysqld      Up      0.0.0.0:9999->3306/tcp  
+  pythoncourse-intro_tango-test_1   /usr/bin/supervisord --con ...   Up           
+  ```
+  
+- To stop the tango system, you can do (from the root of the course dir):
+  ```
+  docker-compose down
+  ```
