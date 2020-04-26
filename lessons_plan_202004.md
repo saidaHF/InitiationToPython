@@ -50,12 +50,12 @@ to adapt to the actual progress of the course or to the unfolding of the events.
 
 ## Block 8:
 - When: 2020-04-24, 11:00-13:00
-- Topics: discuss solutions of algebra1; general recap
+- Topics: discuss solutions of matplot1 and algebra1; general recap
 - exercises: fitting1, equation1
 
 ## Block 9:
 - When: 2020-04-27, 11:00-13:00
-- Topics: intro to tango, pytango, taurus and sardana
+- Topics: discuss solutions of algebra1 and equation1; intro to tango, pytango, taurus and sardana
 
 ## Block 10:
 - When: 2020-04-29, 11:00-13:00
