@@ -31,7 +31,10 @@ Tips:
 
 - "import numpy as np"
 
-- See numpy.arange(), numpy.randn() --or even better, numpy.random.normal()--
+- See numpy.arange(),
+
+- For random number generation, see: https://numpy.org/devdocs/reference/random
+  In particular, numpy.random.default_rng() its .normal() method
 
 - For filters, "import scipy.signal" and see scipy.signal.medfilt()
 
@@ -54,15 +57,19 @@ from scipy.signal import medfilt
 # generate data
 data_x = np.arange(-5, 5, 0.1)
 data_y0 = 3 * data_x ** 2 + 5 * data_x - 10
-data_y = np.random.normal(loc=data_y0, scale=10.0)
+rg = np.random.default_rng(321)  # passing a seed (321) for reproducibility
+data_y = rg.normal(loc=data_y0, scale=10.0)
 
 # filter
 smooth_y = medfilt(data_y, 7)
 
 # polynomial fit
-[a, b, c] = np.polyfit(data_x, data_y, 2)
-print("FIT to f(x)=a*x**2+b*x+c : a=%.3g\tb=%.3g\tc=%.3g" % (a, b, c))
-fitted_y = a * data_x ** 2 + b * data_x + c
+p = np.polyfit(data_x, data_y, 2)
+print("FIT to f(x)=a*x**2+b*x+c : a={:.3g}\tb={:.3g}\tc={:.3g}".format(*p))
+
+fitted_y = np.polyval(p, data_x)
+# The above line is equivalent to:
+# fitted_y = p[0] * data_x ** 2 + p[1] * data_x + p[2]
 
 # plotting everything
 plt.plot(data_x, data_y0, "b-")

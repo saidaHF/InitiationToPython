@@ -31,7 +31,10 @@ Tips:
 
 - "import numpy as np"
 
-- See numpy.arange(), numpy.randn() --or even better, numpy.random.normal()--
+- See numpy.arange(),
+
+- For random number generation, see: https://numpy.org/devdocs/reference/random
+  In particular, numpy.random.default_rng() its .normal() method
 
 - For filters, "import scipy.signal" and see scipy.signal.medfilt()
 
