@@ -452,19 +452,13 @@ https://pytango.readthedocs.io/en/stable/quicktour.html
 
 ---
 
-## Taurus
-
 ![Taurus](taurus_structure.png "Taurus structure")
 
 ---
 
-## Taurus Community
-
 ![Taurus Community](taurus_community.png "Taurus community")
 
 ---
-
-## Sardana
 
 ![Sardana components](sardana_sketch.png "Sardana components")
 
