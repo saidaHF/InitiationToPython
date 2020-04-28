@@ -412,6 +412,12 @@ References:
 
 ---
  
+# PyTango, Taurus, Sardana
+
+![Tango, Taurus, Sardana](taurus_sardana_relations.png "Tango, Taurus, Sardana")
+
+---
+
 ## PyTango (for clients)
 
 https://pytango.readthedocs.io/en/stable/quicktour.html
