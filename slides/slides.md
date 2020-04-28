@@ -412,8 +412,6 @@ References:
 
 ---
  
-# PyTango, Taurus, Sardana
-
 ![Tango, Taurus, Sardana](taurus_sardana_relations.png "Tango, Taurus, Sardana")
 
 ---
