@@ -36,8 +36,8 @@ The course does not require any previous experience with python. Familiarity
 with other programming languages will help you a lot, but it is also not required.
 
 But the course requires **commitment**. In its presential form, it consists on 
-5 sessions of half a day (~4h). In its remote form it is planned for 11 sessions
-of 1 to 2h. Also, participants are expected to dedicate *at least* 2h after each
+5 sessions of half a day (~4h). In its remote form it is done in 11 sessions
+of ~2h. Also, participants are expected to dedicate *at least* 2h after each
 session (1 to 2h in the case of the remote course) working on the proposed 
 exercises (the exact time depends a lot on the previous programming experience 
 of the participant). **Attending to sessions and doing the exercises is a 
