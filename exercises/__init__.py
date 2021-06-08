@@ -24,4 +24,45 @@ change. Then print the elements of the diagonal of M2 """
 print(" ")
 newList[0][1] = math.sqrt(newList[0][1])
 print(newList.astype(float))
+print(" ")
+""" Like "Scanner" in Java, data entry """
 
+# x = int(input("Enter x: "))
+# y = int(input("Enter y: "))
+# s = x + y
+# print(s)
+
+print(" ")
+
+# lists / array
+l = [ "Drake", "Derp", "Derek", "Alicia" ]
+print(l)                # prints all elements
+l.append("Victoria")   # add element.
+print(l)                # print all elements
+l.remove("Derp")       # remove element.
+l.remove("Drake")      # remove element.
+print(l)               # print all elements.
+l.sort()    # sorts the list in alphabetical order
+l.reverse() # reverse order.
+print(l)
+print(" ")
+
+age = 24
+print("Guess my age, you have 1 chances!")
+guess = int(input("Guess: "))
+
+if guess != age:
+    print("Wrong!")
+else:
+    print("Correct")
+
+print(" ")
+# We use this syntax to define as function:
+#
+# def function(parameters):
+#     instructions
+#     return value
+
+for x in range(1,10):
+    for y in range(1,10):
+        print("(" + str(x) + "," + str(y) + ")")
