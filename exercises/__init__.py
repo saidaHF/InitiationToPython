@@ -1,6 +1,7 @@
 import numpy as np
 from numpy.lib import math
 
+
 M = np.array([[1, 2, 0],
               [0, 2, 0],
               [0, 0, 3]])
@@ -63,6 +64,23 @@ print(" ")
 #     instructions
 #     return value
 
-for x in range(1,10):
-    for y in range(1,10):
-        print("(" + str(x) + "," + str(y) + ")")
+# for x in range(1,10):
+#     for y in range(1,10):
+#         print("(" + str(x) + "," + str(y) + ")")
+
+
+print(list(range(5)))
+
+# En Python hay las listas y las tuplas. La lista es una estructura mutable (es decir podemos modificar sus elementos,
+# agregar y borrar) en cambio una tupla es una secuencia de datos inmutable, es decir una vez definida no puede cambiar.
+#
+# TUPLA:
+# x = (3,4,5,6)
+# x = x + (1,2,3)
+# print(x)
+#
+# Puede estar vacia:
+# tuple = ()
+#
+# O solo un elemento:
+# tuple = (3,)
