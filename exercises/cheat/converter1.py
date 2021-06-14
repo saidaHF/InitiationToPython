@@ -49,7 +49,7 @@ Tips:
 input_file_name = "../sp8c.dat"  # I use "../" because it is in the parent dir
 output_file_name = "converted1.dat"
 
-# read the spectrum
+# read the spectrum (light)
 f = open(input_file_name, "r")
 text = f.read()  # the whole file is read as text
 f.close()
